@@ -264,12 +264,6 @@ nav a.active {
   color: var(--color-muted-text);
 }
 
-.section.highlight {
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--color-surface), rgba(188, 188, 0, 0.10));
-  box-shadow: var(--shadow-sm);
-}
-
 /* Hero / Page Hero */
 .hero,
 .page-hero {
