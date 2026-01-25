@@ -21,9 +21,12 @@
   --color-surface: var(--brand-white);
   --color-surface-2: rgba(22, 27, 41, 0.04);
   --color-text: var(--brand-black);
+  --color-text-nav: var(--brand-white);
+  --color-text-nav-hover: var(--brand-yellow);
   --color-heading: var(--brand-ink);
   --color-muted-text: var(--brand-gray);
   --color-border: rgba(22, 27, 41, 0.14);
+  --color-border-nav: rgba(255, 255, 255, 0.14);
 
   --color-primary: var(--brand-blue);
   --color-primary-hover: var(--brand-yellow);
@@ -36,6 +39,7 @@
   --topbar-bg: rgba(22, 27, 41, 0.92);
   --topbar-text: rgba(255, 255, 255, 0.92);
   --header-bg: rgba(255, 255, 255, 0.86);
+  --header-nav-bg: var(--brand-ink);
   --header-border: rgba(22, 27, 41, 0.14);
 
   --focus-ring: 0 0 0 3px rgba(255, 255, 0, 0.45);

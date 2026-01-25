@@ -53,7 +53,7 @@
   gap: 1rem;
   justify-content: space-between;
   padding: 0.85rem 1rem;
-  background: var(--header-bg);
+  background: var(--header-nav-bg);
   border-bottom: 1px solid var(--header-border);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -89,7 +89,7 @@ nav a {
   padding: 0.7rem 0.9rem;
   font-weight: 800;
   letter-spacing: 0.2px;
-  color: var(--color-text);
+  color: var(--color-text-nav);
   border-radius: var(--radius-sm);
   text-decoration: none;
   outline: none;
@@ -97,7 +97,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--color-heading);
+  color: var(--color-text-nav-hover);
 }
 
 nav a:hover::after,
@@ -126,7 +126,7 @@ nav a[aria-current="page"]::after {
 
 
 nav a.active {
-  color: var(--color-heading);
+  color: var(--color-text-nav-hover);
 }
 
 
@@ -150,9 +150,9 @@ nav a.active {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-nav);
   background: transparent;
-  color: var(--color-text);
+  color: var(--color-text-nav);
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
@@ -176,7 +176,7 @@ nav a.active {
   width: 18px;
   height: 18px;
   fill: currentColor;
-  color: var(--color-heading);
+  color: var(--color-text-nav);
 }
 
 /* Botão de tema */
@@ -184,9 +184,9 @@ nav a.active {
   width: 42px;
   height: 42px;
   border-radius: var(--radius-md);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-nav);
   background: transparent;
-  color: var(--color-heading);
+  color: var(--color-text-nav);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
