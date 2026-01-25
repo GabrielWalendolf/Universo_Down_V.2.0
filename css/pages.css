@@ -1,0 +1,162 @@
+/* ==========================================================
+   ESTILOS ESPECÍFICOS DE PÁGINAS
+   ========================================================== */
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.timeline li {
+  margin-bottom: 1.25rem;
+  border-left: 4px solid rgba(0, 73, 140, 0.45);
+  padding-left: 1rem;
+}
+
+.timeline .year {
+  font-weight: 900;
+  color: var(--color-heading);
+}
+
+/* Accordion */
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.accordion-header:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(149, 86, 235, 0.25);
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-muted-text);
+}
+
+.accordion-content.open {
+  display: block;
+}
+
+/* Projects */
+.filters {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.filter-btn {
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  border-radius: 999px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease, border-color 160ms ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-1px);
+  background: var(--color-surface);
+  border-color: rgba(0, 73, 140, 0.28);
+}
+
+.filter-btn.active {
+  background: rgba(0, 73, 140, 0.12);
+  border-color: rgba(0, 73, 140, 0.30);
+  color: var(--color-heading);
+}
+
+.project-details {
+  display: none;
+  margin-top: 1rem;
+  color: var(--color-muted-text);
+}
+
+.project-details.open {
+  display: block;
+}
+
+/* Partners */
+.partners-grid.obsolete {
+  opacity: 0.55;
+  filter: grayscale(100%);
+}
+
+/* Diretoria */
+.board-member img {
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-weight: 900;
+  color: var(--color-heading);
+}
+
+/* Forms */
+.contact-form {
+  max-width: 540px;
+  margin-top: 1.5rem;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  color: var(--color-heading);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(149, 86, 235, 0.22);
+  border-color: rgba(149, 86, 235, 0.35);
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: var(--color-secondary);
+  font-weight: 800;
+}
+
+/* Map */
+.map-placeholder {
+  height: 250px;
+  border: 1px dashed rgba(0, 73, 140, 0.45);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--color-surface), rgba(0, 73, 140, 0.06));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted-text);
+}

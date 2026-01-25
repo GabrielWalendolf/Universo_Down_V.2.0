@@ -1,0 +1,67 @@
+:root {
+  /* ====== Paleta (nova) ====== */
+  --brand-black: #000000;
+  --brand-yellow: #FFFF00; /* destaque / hover */
+  --brand-gray: #808080;   /* textos secundários */
+  --brand-ink: #161B29;    /* fundo dark (não preto puro) */
+  --brand-blue: #486BCB;   /* destaque */
+  --brand-white: #FFFFFF;
+
+  /* ====== Raio (menos arredondado) ====== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 10px;
+
+  /* ====== Layout ====== */
+  --container: 1120px;
+  --gutter: clamp(1rem, 4vw, 2.25rem);
+
+  /* ====== Tokens (Light) ====== */
+  --color-bg: var(--brand-white);
+  --color-surface: var(--brand-white);
+  --color-surface-2: rgba(22, 27, 41, 0.04);
+  --color-text: var(--brand-black);
+  --color-heading: var(--brand-ink);
+  --color-muted-text: var(--brand-gray);
+  --color-border: rgba(22, 27, 41, 0.14);
+
+  --color-primary: var(--brand-blue);
+  --color-primary-hover: var(--brand-yellow);
+  --color-secondary: var(--brand-ink);
+  --color-link: var(--brand-blue);
+
+  --shadow-sm: 0 10px 24px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.16);
+
+  --topbar-bg: rgba(22, 27, 41, 0.92);
+  --topbar-text: rgba(255, 255, 255, 0.92);
+  --header-bg: rgba(255, 255, 255, 0.86);
+  --header-border: rgba(22, 27, 41, 0.14);
+
+  --focus-ring: 0 0 0 3px rgba(255, 255, 0, 0.45);
+}
+
+[data-theme="dark"] {
+  --color-bg: var(--brand-ink);
+  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-surface-2: rgba(255, 255, 255, 0.10);
+  --color-text: var(--brand-white);
+  --color-heading: var(--brand-white);
+  --color-muted-text: rgba(255, 255, 255, 0.70);
+  --color-border: rgba(255, 255, 255, 0.14);
+
+  --color-primary: var(--brand-blue);
+  --color-primary-hover: var(--brand-yellow);
+  --color-secondary: var(--brand-yellow);
+  --color-link: var(--brand-white);
+
+  --shadow-sm: 0 10px 26px rgba(0, 0, 0, 0.30);
+  --shadow-md: 0 18px 52px rgba(0, 0, 0, 0.45);
+
+  --topbar-bg: rgba(0, 0, 0, 0.55);
+  --topbar-text: rgba(255, 255, 255, 0.92);
+  --header-bg: rgba(22, 27, 41, 0.86);
+  --header-border: rgba(255, 255, 255, 0.14);
+
+  --focus-ring: 0 0 0 3px rgba(255, 255, 0, 0.55);
+}
