@@ -202,8 +202,8 @@ nav a.active {
 
 #themeToggle:hover {
   transform: translateY(-1px);
-  background: var(--color-surface);
-  border-color: rgba(149, 86, 235, 0.35);
+  background: transparent;
+  border-color: var(--brand-white);
 }
 
 /* Mobile menu toggle */
