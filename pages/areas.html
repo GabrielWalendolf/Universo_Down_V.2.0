@@ -120,7 +120,7 @@
         <h2>Nossas Áreas</h2>
 
         <div class="cards areas-grid">
-          <a href="#ep" class="card">
+          <a href="#ep" class="card" aria-controls="areaDetail">
             <span class="material-symbols-outlined" aria-hidden="true"
               >school</span
             >
@@ -128,7 +128,7 @@
             <p>Estimulação Precoce</p>
           </a>
 
-          <a href="#aee" class="card">
+          <a href="#aee" class="card" aria-controls="areaDetail">
             <span class="material-symbols-outlined" aria-hidden="true"
               >menu_book</span
             >
@@ -136,7 +136,7 @@
             <p>Atendimento Educacional Especializado</p>
           </a>
 
-          <a href="#sae" class="card">
+          <a href="#sae" class="card" aria-controls="areaDetail">
             <span class="material-symbols-outlined" aria-hidden="true"
               >psychology</span
             >
@@ -144,7 +144,7 @@
             <p>Serviço de Atendimento Especializado</p>
           </a>
 
-          <a href="#clube-maes" class="card">
+          <a href="#clube-maes" class="card" aria-controls="areaDetail">
             <span class="material-symbols-outlined" aria-hidden="true"
               >groups</span
             >
@@ -152,7 +152,7 @@
             <p>Apoio e troca de experiências</p>
           </a>
 
-          <a href="#esporte" class="card">
+          <a href="#esporte" class="card" aria-controls="areaDetail">
             <span class="material-symbols-outlined" aria-hidden="true"
               >sports_soccer</span
             >
@@ -160,7 +160,7 @@
             <p>Atividades físicas inclusivas</p>
           </a>
 
-          <a href="#cultura" class="card">
+          <a href="#cultura" class="card" aria-controls="areaDetail">
             <span class="material-symbols-outlined" aria-hidden="true"
               >palette</span
             >
@@ -168,87 +168,96 @@
             <p>Expressão artística e cultural</p>
           </a>
         </div>
+
+        <div class="area-detail" id="areaDetail" role="region" aria-live="polite">
+          <h3 data-area-title>Selecione uma área</h3>
+          <div data-area-body>
+            <p>Escolha um card acima para ver a descrição completa da área.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Detalhes das Áreas -->
 
-      <section id="ep" class="section">
-        <h2>EP — Estimulação Precoce</h2>
-        <p>
-          <strong>Objetivo:</strong> Promover o desenvolvimento global na
-          primeira infância.
-        </p>
-        <p><strong>Público:</strong> Crianças pequenas e suas famílias.</p>
-        <p>
-          <strong>Como participar:</strong> Encaminhamento e contato com a
-          instituição.
-        </p>
-        <p><strong>Horários:</strong> Placeholder</p>
-      </section>
+      <div class="areas-details">
+        <section id="ep" class="section">
+          <h2>EP — Estimulação Precoce</h2>
+          <p>
+            <strong>Objetivo:</strong> Promover o desenvolvimento global na
+            primeira infância.
+          </p>
+          <p><strong>Público:</strong> Crianças pequenas e suas famílias.</p>
+          <p>
+            <strong>Como participar:</strong> Encaminhamento e contato com a
+            instituição.
+          </p>
+          <p><strong>Horários:</strong> Placeholder</p>
+        </section>
 
-      <section id="aee" class="section">
-        <h2>AEE — Atendimento Educacional Especializado</h2>
-        <p>
-          <strong>Objetivo:</strong> Complementar o ensino regular com apoio
-          pedagógico.
-        </p>
-        <p>
-          <strong>Público:</strong> Crianças e adolescentes em idade escolar.
-        </p>
-        <p><strong>Como participar:</strong> Inscrição mediante avaliação.</p>
-        <p><strong>Horários:</strong> Placeholder</p>
-      </section>
+        <section id="aee" class="section">
+          <h2>AEE — Atendimento Educacional Especializado</h2>
+          <p>
+            <strong>Objetivo:</strong> Complementar o ensino regular com apoio
+            pedagógico.
+          </p>
+          <p>
+            <strong>Público:</strong> Crianças e adolescentes em idade escolar.
+          </p>
+          <p><strong>Como participar:</strong> Inscrição mediante avaliação.</p>
+          <p><strong>Horários:</strong> Placeholder</p>
+        </section>
 
-      <section id="sae" class="section">
-        <h2>SAE — Serviço de Atendimento Especializado</h2>
-        <p>
-          <strong>Objetivo:</strong> Oferecer acompanhamento multidisciplinar.
-        </p>
-        <p>
-          <strong>Público:</strong> Pessoas com Síndrome de Down em diferentes
-          fases da vida.
-        </p>
-        <p>
-          <strong>Como participar:</strong> Agendamento com a equipe técnica.
-        </p>
-        <p><strong>Horários:</strong> Placeholder</p>
-      </section>
+        <section id="sae" class="section">
+          <h2>SAE — Serviço de Atendimento Especializado</h2>
+          <p>
+            <strong>Objetivo:</strong> Oferecer acompanhamento multidisciplinar.
+          </p>
+          <p>
+            <strong>Público:</strong> Pessoas com Síndrome de Down em diferentes
+            fases da vida.
+          </p>
+          <p>
+            <strong>Como participar:</strong> Agendamento com a equipe técnica.
+          </p>
+          <p><strong>Horários:</strong> Placeholder</p>
+        </section>
 
-      <section id="clube-maes" class="section">
-        <h2>Clube de Mães</h2>
-        <p>
-          <strong>Objetivo:</strong> Criar um espaço de acolhimento e
-          fortalecimento emocional.
-        </p>
-        <p><strong>Público:</strong> Mães e familiares.</p>
-        <p>
-          <strong>Como participar:</strong> Encontros abertos mediante
-          inscrição.
-        </p>
-        <p><strong>Horários:</strong> Placeholder</p>
-      </section>
+        <section id="clube-maes" class="section">
+          <h2>Clube de Mães</h2>
+          <p>
+            <strong>Objetivo:</strong> Criar um espaço de acolhimento e
+            fortalecimento emocional.
+          </p>
+          <p><strong>Público:</strong> Mães e familiares.</p>
+          <p>
+            <strong>Como participar:</strong> Encontros abertos mediante
+            inscrição.
+          </p>
+          <p><strong>Horários:</strong> Placeholder</p>
+        </section>
 
-      <section id="esporte" class="section">
-        <h2>Esporte</h2>
-        <p>
-          <strong>Objetivo:</strong> Incentivar saúde, socialização e
-          autoestima.
-        </p>
-        <p><strong>Público:</strong> Crianças, jovens e adultos.</p>
-        <p><strong>Como participar:</strong> Avaliação inicial e inscrição.</p>
-        <p><strong>Horários:</strong> Placeholder</p>
-      </section>
+        <section id="esporte" class="section">
+          <h2>Esporte</h2>
+          <p>
+            <strong>Objetivo:</strong> Incentivar saúde, socialização e
+            autoestima.
+          </p>
+          <p><strong>Público:</strong> Crianças, jovens e adultos.</p>
+          <p><strong>Como participar:</strong> Avaliação inicial e inscrição.</p>
+          <p><strong>Horários:</strong> Placeholder</p>
+        </section>
 
-      <section id="cultura" class="section">
-        <h2>Cultura</h2>
-        <p>
-          <strong>Objetivo:</strong> Estimular expressão artística e
-          participação cultural.
-        </p>
-        <p><strong>Público:</strong> Todas as idades.</p>
-        <p><strong>Como participar:</strong> Oficinas e projetos periódicos.</p>
-        <p><strong>Horários:</strong> Placeholder</p>
-      </section>
+        <section id="cultura" class="section">
+          <h2>Cultura</h2>
+          <p>
+            <strong>Objetivo:</strong> Estimular expressão artística e
+            participação cultural.
+          </p>
+          <p><strong>Público:</strong> Todas as idades.</p>
+          <p><strong>Como participar:</strong> Oficinas e projetos periódicos.</p>
+          <p><strong>Horários:</strong> Placeholder</p>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
