@@ -3,14 +3,14 @@
   --brand-black: #000000;
   --brand-yellow: #FFFF00; /* destaque / hover */
   --brand-gray: #808080;   /* textos secundários */
-  --brand-ink: #161B29;    /* fundo dark (não preto puro) */
-  --brand-blue: #486BCB;   /* destaque */
+  --brand-blue-brand: #0081BA; /* Novo Azul (Nav e Footer) */
+  --brand-blue: #486BCB;   /* destaque secundário */
   --brand-white: #FFFFFF;
 
-/* possiveis cores */
-  /* #0081BA; */
+  /* Cor Cinza para o fundo do Modo Escuro */
+  --brand-dark-gray: #1F1F1F;
 
-  /* ====== Raio (menos arredondado) ====== */
+  /* ====== Raio ====== */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 10px;
@@ -22,34 +22,46 @@
   /* ====== Tokens (Light) ====== */
   --color-bg: var(--brand-white);
   --color-surface: var(--brand-white);
-  --color-surface-2: rgba(22, 27, 41, 0.04);
+  --color-surface-2: rgba(0, 129, 186, 0.04);
+
   --color-text: var(--brand-black);
+
   --color-text-nav: var(--brand-white);
   --color-text-nav-hover: var(--brand-yellow);
-  --color-heading: var(--brand-ink);
+
+  --color-heading: var(--brand-blue-brand);
+
   --color-muted-text: var(--brand-gray);
-  --color-border: rgba(22, 27, 41, 0.14);
+  --color-border: rgba(0, 129, 186, 0.14);
   --color-border-nav: rgba(255, 255, 255, 0.14);
 
-  --color-primary: var(--brand-blue);
+  --color-primary: var(--brand-blue-brand);
   --color-primary-hover: var(--brand-yellow);
-  --color-secondary: var(--brand-ink);
-  --color-link: var(--brand-blue);
+  --color-secondary: var(--brand-blue-brand);
+  --color-link: var(--brand-blue-brand);
 
   --shadow-sm: 0 10px 24px rgba(0, 0, 0, 0.12);
   --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.16);
 
-  --topbar-bg: rgba(22, 27, 41, 0.92);
+  /* Navbar e Topbar (Light Mode) */
+  --topbar-bg: rgba(0, 129, 186, 0.95);
   --topbar-text: rgba(255, 255, 255, 0.92);
   --header-bg: rgba(255, 255, 255, 0.86);
-  --header-nav-bg: var(--brand-ink);
-  --header-border: rgba(22, 27, 41, 0.14);
+  --header-nav-bg: var(--brand-blue-brand);
+  --header-border: rgba(0, 129, 186, 0.14);
+
+  /* Footer Tokens (Light Mode) */
+  --footer-bg: var(--brand-blue-brand);
+  --footer-text: var(--brand-white);
+  --footer-hover: var(--brand-yellow);
 
   --focus-ring: 0 0 0 3px rgba(255, 255, 0, 0.45);
 }
 
 [data-theme="dark"] {
-  --color-bg: var(--brand-ink);
+  /* Fundo Cinza para o conteúdo geral */
+  --color-bg: var(--brand-dark-gray);
+
   --color-surface: rgba(255, 255, 255, 0.06);
   --color-surface-2: rgba(255, 255, 255, 0.10);
   --color-text: var(--brand-white);
@@ -67,8 +79,16 @@
 
   --topbar-bg: rgba(0, 0, 0, 0.55);
   --topbar-text: rgba(255, 255, 255, 0.92);
-  --header-bg: rgba(22, 27, 41, 0.86);
+
+  /* Header e Nav mantendo a identidade Azul no Dark Mode */
+  --header-bg: rgba(30, 30, 30, 0.95);
+  --header-nav-bg: var(--brand-blue-brand); /* Azul mantido */
   --header-border: rgba(255, 255, 255, 0.14);
+
+  /* Footer mantendo a identidade Azul no Dark Mode */
+  --footer-bg: var(--brand-blue-brand);       /* Azul mantido */
+  --footer-text: var(--brand-white);
+  --footer-hover: var(--brand-yellow);
 
   --focus-ring: 0 0 0 3px rgba(255, 255, 0, 0.55);
 }

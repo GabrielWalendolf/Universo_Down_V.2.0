@@ -53,7 +53,7 @@
   gap: 1rem;
   justify-content: space-between;
   padding: 0.85rem 1rem;
-  background: var(--header-nav-bg);
+  background: var(--header-nav-bg); /* Agora usa o Azul #0081BA */
   border-bottom: 1px solid var(--header-border);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -250,6 +250,7 @@ nav a.active {
     justify-content: flex-start;
     border-radius: var(--radius-sm);
     padding: 0.75rem 0.9rem;
+    color: var(--color-heading); /* Ajuste para legibilidade no dropdown mobile (fundo branco/cinza) */
   }
 }
 
@@ -275,7 +276,8 @@ nav a.active {
 .page-hero {
   padding: 4.6rem 1rem;
   text-align: center;
-  background: radial-gradient(800px 400px at 20% 20%, rgba(0, 73, 140, 0.18), transparent 60%),
+  /* Ajuste sutil no gradiente para combinar com o novo azul */
+  background: radial-gradient(800px 400px at 20% 20%, rgba(0, 129, 186, 0.18), transparent 60%),
               radial-gradient(700px 360px at 80% 10%, rgba(149, 86, 235, 0.18), transparent 55%),
               linear-gradient(180deg, var(--color-surface), var(--color-bg));
   border-bottom: 1px solid var(--color-border);
@@ -355,7 +357,7 @@ nav a.active {
   font-weight: 800;
   letter-spacing: 0.2px;
   min-height: 84px;
-  background: linear-gradient(135deg, rgba(0, 73, 140, 0.08), rgba(149, 86, 235, 0.08));
+  background: linear-gradient(135deg, rgba(0, 129, 186, 0.08), rgba(149, 86, 235, 0.08));
 }
 
 /* Botões */
@@ -364,7 +366,7 @@ nav a.active {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--color-primary), rgba(0, 73, 140, 0.88));
+  background: linear-gradient(135deg, var(--color-primary), rgba(0, 129, 186, 0.88));
   color: var(--brand-white);
   padding: 0.85rem 1.25rem;
   font-weight: 800;
@@ -420,7 +422,9 @@ nav a.active {
 /* Footer */
 .footer {
   padding: 2.2rem 1rem;
-  background: linear-gradient(180deg, var(--color-surface), var(--color-bg));
+  /* Alterado para usar a variável definida no tema */
+  background: var(--footer-bg);
+  color: var(--footer-text);
   border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
@@ -431,7 +435,31 @@ nav a.active {
 
 .footer p {
   margin: 0.35rem 0;
-  color: var(--color-muted-text);
+  color: inherit; /* Herda a cor branca/texto do footer */
+  opacity: 0.9;
+}
+
+/* Links do Footer */
+.footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  border-bottom: 1px solid transparent;
+}
+
+/* Hover específico solicitado (#FFFF00) */
+.footer-links a:hover,
+.footer a:hover {
+  color: var(--footer-hover);
+  border-bottom-color: var(--footer-hover);
 }
 
 /* Cookie banner */
@@ -457,8 +485,8 @@ nav a.active {
   border-radius: var(--radius-md);
   padding: 0.7rem 1rem;
   font-weight: 800;
-  background: var(--color-tertiary);
-  color: var(--brand-navy);
+  background: var(--color-primary);
+  color: var(--brand-white);
 }
 
 .cookie-banner button:hover {
@@ -472,11 +500,8 @@ button, .btn-primary, .btn-secondary, nav a, .social-links a {
 
 /* ==========================================================
    AJUSTES DE LAYOUT (conteúdo centralizado + mobile-first)
-   - Mantém a identidade/cores/hover já existentes
-   - Adiciona um “container” para afastar das bordas (estilo FSDown)
    ========================================================== */
 
-/* Container utilitário: centraliza e cria respiro lateral */
 .container {
   width: 100%;
   max-width: var(--container);
@@ -484,22 +509,19 @@ button, .btn-primary, .btn-secondary, nav a, .social-links a {
   padding-inline: var(--gutter);
 }
 
-
-/* Padroniza respiro lateral das seções (compatível com o .container) */
 .section,
 .hero,
 .page-hero {
   padding-inline: var(--gutter);
 }
 
-/* Topbar com wrapper interno */
 .topbar {
-  padding: 0; /* o respiro lateral fica por conta do .container */
+  padding: 0;
 }
 
 .topbar-inner {
   display: flex;
-  flex-direction: column; /* mobile-first */
+  flex-direction: column;
   align-items: flex-start;
   gap: 0.35rem;
   justify-content: space-between;
@@ -514,9 +536,8 @@ button, .btn-primary, .btn-secondary, nav a, .social-links a {
   }
 }
 
-/* Header com wrapper interno */
 .header {
-  padding: 0; /* o respiro lateral fica por conta do .container */
+  padding: 0;
 }
 
 .header-inner {
@@ -527,17 +548,21 @@ button, .btn-primary, .btn-secondary, nav a, .social-links a {
   padding-block: 0.85rem;
 }
 
-/* Footer com wrapper interno + grid de informações */
 .footer {
-  padding: 0; /* o respiro lateral fica por conta do .container */
+  padding: 0;
 }
 
 .footer-inner {
   display: flex;
-  flex-direction: column; /* mobile-first */
+  flex-direction: column;
   align-items: flex-start;
   gap: 1.25rem;
   padding-block: 2.2rem;
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 @media (min-width: 760px) {
@@ -563,18 +588,4 @@ button, .btn-primary, .btn-secondary, nav a, .social-links a {
 
 .footer-col p {
   margin: 0.35rem 0;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-
-.footer-links a {
-  border-bottom: 1px solid transparent;
-}
-
-.footer-links a:hover {
-  border-bottom-color: rgba(255, 255, 255, 0.65);
 }
