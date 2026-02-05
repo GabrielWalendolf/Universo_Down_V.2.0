@@ -54,8 +54,10 @@ p {
   color: var(--color-text);
 }
 
+/* ALTERADO: Cor de seleção para amarelo com transparência */
 ::selection {
-  background: rgba(149, 86, 235, 0.35);
+  background: rgba(255, 255, 0, 0.5); /* Amarelo com 50% de opacidade */
+  color: #000; /* Garante contraste legível com o amarelo */
 }
 
 main {

@@ -11,7 +11,7 @@
 
 .timeline li {
   margin-bottom: 1.25rem;
-  border-left: 4px solid rgba(0, 73, 140, 0.45);
+  border-left: 4px solid rgba(0, 129, 186, 0.45); /* Ajustado para o tom azulado */
   padding-left: 1rem;
 }
 
@@ -39,7 +39,8 @@
 .accordion-header:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(149, 86, 235, 0.25);
+  /* ALTERADO: De roxo para amarelo (destaque) */
+  border-color: rgba(255, 255, 0, 0.55);
 }
 
 .accordion-content {
@@ -77,12 +78,12 @@
 .filter-btn:hover {
   transform: translateY(-1px);
   background: var(--color-surface);
-  border-color: rgba(0, 73, 140, 0.28);
+  border-color: rgba(0, 129, 186, 0.28);
 }
 
 .filter-btn.active {
-  background: rgba(0, 73, 140, 0.12);
-  border-color: rgba(0, 73, 140, 0.30);
+  background: rgba(0, 129, 186, 0.12);
+  border-color: rgba(0, 129, 186, 0.30);
   color: var(--color-heading);
 }
 
@@ -173,8 +174,9 @@ body.areas-interactive .areas-details {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(149, 86, 235, 0.22);
-  border-color: rgba(149, 86, 235, 0.35);
+  /* ALTERADO: De roxo para amarelo */
+  box-shadow: 0 0 0 4px rgba(255, 255, 0, 0.35);
+  border-color: rgba(255, 255, 0, 0.65);
 }
 
 .success-message {
@@ -186,9 +188,9 @@ body.areas-interactive .areas-details {
 /* Map */
 .map-placeholder {
   height: 250px;
-  border: 1px dashed rgba(0, 73, 140, 0.45);
+  border: 1px dashed rgba(0, 129, 186, 0.45);
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--color-surface), rgba(0, 73, 140, 0.06));
+  background: linear-gradient(135deg, var(--color-surface), rgba(0, 129, 186, 0.06));
   display: flex;
   align-items: center;
   justify-content: center;
