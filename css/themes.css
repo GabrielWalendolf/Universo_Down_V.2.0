@@ -7,6 +7,9 @@
   --brand-blue: #486BCB;   /* destaque */
   --brand-white: #FFFFFF;
 
+/* possiveis cores */
+  /* #0081BA; */
+
   /* ====== Raio (menos arredondado) ====== */
   --radius-sm: 6px;
   --radius-md: 10px;
