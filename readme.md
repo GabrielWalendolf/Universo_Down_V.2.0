@@ -1,1 +1,9 @@
-o arquivo, themes.css é utilizado para fazer a organização das variáveis utilizadas no restante dos arquivos css, para estabelecer cores fixas e facilitar o entendimento e organização.
+coisas para arrumar:
+
+top bar, arrumar os icones requisitados e alinhamento de divs.
+
+adicionar imagens em lugares especificados.
+
+adicionar cores e imagens de fundo.
+
+
