@@ -44,7 +44,7 @@
   --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.16);
 
   /* Navbar e Topbar (Light Mode) */
-  --topbar-bg: rgba(0, 129, 186, 0.95);
+  --topbar-bg: #0076a8;
   --topbar-text: rgba(255, 255, 255, 0.92);
   --header-bg: rgba(255, 255, 255, 0.86);
   --header-nav-bg: var(--brand-blue-brand);
