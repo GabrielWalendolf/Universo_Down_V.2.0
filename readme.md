@@ -1,9 +1,11 @@
-coisas para arrumar:
+### coisas para arrumar:
 
-top bar, arrumar os icones requisitados e alinhamento de divs.
+- top bar, alinhamento de itens.
 
-adicionar imagens em lugares especificados.
+- adicionar imagens em lugares especificados.
 
-adicionar cores e imagens de fundo.
+- adicionar cores e imagens de fundo.
 
+### coisas feitas:
 
+- top bar, arrumar os icones requisitados.
