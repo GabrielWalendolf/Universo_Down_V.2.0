@@ -14,6 +14,19 @@
   font-size: 0.92rem;
 }
 
+.topbar-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.images-topbar-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .topbar span {
   display: inline-flex;
   align-items: center;
