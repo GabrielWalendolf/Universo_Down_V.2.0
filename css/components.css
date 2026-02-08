@@ -27,6 +27,12 @@
   gap: 0.5rem;
 }
 
+.images-ods-topbar {
+  height: 45px;
+  width: auto;
+  border-radius: var(--radius-md);
+}
+
 .topbar span {
   display: inline-flex;
   align-items: center;

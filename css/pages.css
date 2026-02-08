@@ -11,7 +11,7 @@
 
 .timeline li {
   margin-bottom: 1.25rem;
-  border-left: 4px solid rgba(0, 129, 186, 0.45); /* Ajustado para o tom azulado */
+  border-left: 4px solid rgba(0, 129, 186, 0.45);
   padding-left: 1rem;
 }
 
@@ -39,7 +39,6 @@
 .accordion-header:hover {
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
-  /* ALTERADO: De roxo para amarelo (destaque) */
   border-color: rgba(255, 255, 0, 0.55);
 }
 
@@ -174,7 +173,6 @@ body.areas-interactive .areas-details {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  /* ALTERADO: De roxo para amarelo */
   box-shadow: 0 0 0 4px rgba(255, 255, 0, 0.35);
   border-color: rgba(255, 255, 0, 0.65);
 }
