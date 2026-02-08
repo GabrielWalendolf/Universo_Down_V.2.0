@@ -290,6 +290,11 @@ nav a.active {
   color: var(--color-muted-text);
 }
 
+.section > ul, li {
+  margin-top: 0.8rem;
+  color: var(--color-muted-text);
+}
+
 /* Hero / Page Hero */
 .hero,
 .page-hero {
