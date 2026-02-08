@@ -2,9 +2,13 @@
 ---
 - top bar, alinhamento de itens.
 
-- adicionar imagens em lugares especificados.
+
 
 - adicionar cores e imagens de fundo.
+
+### em processo:
+---
+- adicionar imagens em lugares especificados.
 
 ### coisas feitas:
 ---
