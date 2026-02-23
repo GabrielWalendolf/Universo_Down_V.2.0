@@ -4,9 +4,9 @@
         <div class="footer-columns">
           <div class="footer-col">
             <p><strong>Universo Down</strong></p>
-            <p><span class="material-symbols-outlined" aria-hidden="true">location_on</span> Endereço institucional (placeholder)</p>
-            <p><span class="material-symbols-outlined" aria-hidden="true">call</span> <a href="tel:+550000000000">00 0000-0000</a> • <a href="tel:+550000000000">00 00000-0000</a></p>
-            <p><span class="material-symbols-outlined" aria-hidden="true">mail</span> <a href="mailto:contato@universodown.org">contato@universodown.org</a></p>
+            <p><i class="fi fi-sr-marker"></i> Endereço institucional (placeholder)</p>
+            <p><i class="fi fi-sr-phone-call"></i> <a href="tel:+550000000000">00 0000-0000</a> • <a href="tel:+550000000000">00 00000-0000</a></p>
+            <p><i class="fi fi-sr-envelope"></i> <a href="mailto:contato@universodown.org">contato@universodown.org</a></p>
           </div>
           <div class="footer-col">
             <p><strong>Horários</strong></p>

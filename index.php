@@ -57,12 +57,15 @@ include 'includes/header.php';
     <section class="section">
       <h2>Áreas de Atuação</h2>
       <div class="cards areas">
-        <a href="pages/areas.html#ep" class="card">EP</a>
-        <a href="pages/areas.html#aee" class="card">AEE</a>
-        <a href="pages/areas.html#sae" class="card">SAE</a>
-        <a href="pages/areas.html#clube-maes" class="card">Clube de Mães</a>
-        <a href="pages/areas.html#esporte" class="card">Esporte</a>
-        <a href="pages/areas.html#cultura" class="card">Cultura</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#ep" class="card">EP</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#aee" class="card">AEE</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#sae" class="card">SAE</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#clube-maes" class="card">Clube de Mães</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#esporte" class="card">Esporte</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#cultura" class="card">Cultura</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#clube-livros" class="card">Clube do Livro</a>
+        <a href="<?php echo $base_path; ?>pages/areas.php#meio-ambiente-sustentabilidade" class="card">Meio Ambiente & sustentabilidade</a>
+
       </div>
     </section>
 

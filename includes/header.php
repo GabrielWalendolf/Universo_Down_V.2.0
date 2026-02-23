@@ -12,6 +12,9 @@ $current_page = isset($current_page) ? $current_page : 'home';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
 
     <link rel="stylesheet" href="<?php echo $base_path; ?>css/base.css" />
     <link rel="stylesheet" href="<?php echo $base_path; ?>css/themes.css" />
@@ -23,9 +26,9 @@ $current_page = isset($current_page) ? $current_page : 'home';
       <div class="container topbar-inner">
         <div class="topbar-left">
           <span>
-            <span class="material-symbols-outlined">call</span>
+            <i class="fi fi-sr-phone-call"></i>
             <a href="tel:+550000000000">00 0000-0000</a> |
-            <span class="material-symbols-outlined">mail</span>
+            <i class="fi fi-sr-envelope"></i>
             <a href="mailto:contato@universodown.org">contato@universodown.org</a>
           </span>
         </div>
@@ -37,9 +40,9 @@ $current_page = isset($current_page) ? $current_page : 'home';
         </div>
         <div class="header-actions">
           <div class="social-links" aria-label="Redes sociais">
-             <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">In</a>
-             <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
-             <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook">Fb</a>
+             <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fi fi-brands-linkedin"></i></a>
+             <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fi fi-brands-instagram"></i></a>
+             <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fi fi-brands-facebook"></i></a>
           </div>
           <button id="themeToggle" aria-label="Alternar tema">
             <span class="material-symbols-outlined">dark_mode</span>

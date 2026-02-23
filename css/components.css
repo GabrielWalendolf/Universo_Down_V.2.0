@@ -171,9 +171,9 @@ nav a.active {
 .social-links a {
   width: 42px;
   height: 42px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border-nav);
   background: transparent;
@@ -202,6 +202,8 @@ nav a.active {
   height: 18px;
   fill: currentColor;
   color: var(--color-text-nav);
+  display: block; /* Adicione isso */
+  margin: 0;      /* Garante que não haja margem extra */
 }
 
 /* Botão de tema */
