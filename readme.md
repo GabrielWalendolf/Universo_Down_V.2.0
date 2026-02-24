@@ -56,20 +56,3 @@ As cores principais são definidas no arquivo `themes.css`:
 * **Azul Principal (`--brand-blue-brand`)**: `#0081BA`, utilizado no cabeçalho e rodapé.
 * **Amarelo de Destaque (`--brand-yellow`)**: `#FFFF00`, utilizado para hovers e indicações de estados ativos.
 * **Fundo Escuro (`--brand-dark-gray`)**: `#1F1F1F`, para o modo noturno.
-
-### coisas para arrumar:
----
-
-- Urgente fazer formulário de contato funcionar novamente.
-
-- top bar, alinhamento de itens.
-
-- adicionar cores e imagens de fundo.
-
-### em processo:
----
-- adicionar imagens em lugares especificados.
-
-### coisas feitas:
----
-- top bar, arrumar os icones requisitados.
