@@ -55,10 +55,36 @@
 }
 
 @media (max-width: 560px) {
-  .topbar {
+  /* .topbar {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.35rem;
+  } */
+  /* 1. Ajuste da Topbar */
+  .topbar-inner {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  /* Esconde as imagens das ODS no celular para limpar o visual */
+  .images-topbar-center {
+    display: none;
+  }
+
+  .topbar-left {
+    align-items: center; /* Centraliza contatos */
+    text-align: center;
+  }
+
+  .topbar-left span {
+    flex-direction: column; /* Coloca telefone em cima e email embaixo */
+    gap: 0.2rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: center; /* Centraliza redes sociais e tema */
   }
 }
 
@@ -242,28 +268,42 @@ nav a.active {
 
 /* Mobile menu */
 @media (max-width: 1200px) {
+  /* Garante que o container nav empurre o botão para a direita */
+  nav {
+    justify-content: flex-end;
+  }
   #menuToggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto; /* Força o botão para a direita extrema */
   }
 
+  /* Estilo do Menu Aberto */
   nav ul {
     position: absolute;
-    right: 0;
-    top: calc(100% + 10px);
+    right: 0; /* Cola na direita */
+    /* Ajuste o TOP conforme a altura do seu header (testar valores entre 60px e 80px se necessário) */
+    top: 100%;
+
     display: none;
     flex-direction: column;
     align-items: stretch;
-    min-width: min(88vw, 340px);
-    padding: 0.6rem;
+
+    /* AQUI ESTÁ A CORREÇÃO DO TAMANHO */
+    width: 250px; /* Tamanho fixo mais elegante */
+    min-width: auto; /* Remove a largura gigante anterior */
+
+    padding: 1rem;
     background: var(--color-bg);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md); /* Arredonda apenas o canto inferior esquerdo */
+    box-shadow: -5px 10px 20px rgba(0,0,0,0.15); /* Sombra mais destacada */
+    z-index: 1000;
   }
 
   nav ul.open {
+    background-color: #24292E;
     display: flex;
   }
 
@@ -271,8 +311,10 @@ nav a.active {
     justify-content: flex-start;
     border-radius: var(--radius-sm);
     padding: 0.75rem 0.9rem;
-    color: var(--color-heading); /* Ajuste para legibilidade no dropdown mobile (fundo branco/cinza) */
+     color: var(--color-heading); /* Ajuste para legibilidade no dropdown mobile (fundo branco/cinza) */
+
   }
+
 }
 
 /* Seções / Containers */
