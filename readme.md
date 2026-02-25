@@ -43,11 +43,18 @@ A organização do projeto segue uma estrutura modular para facilitar a manuten�
 
 ## 5. Status de Desenvolvimento e Manutenção
 
-Com base no arquivo `readme.md`, o projeto possui as seguintes prioridades:
+O projeto possui as seguintes necessidades:
 
-* **Urgente**: Corrigir a funcionalidade do formulário de contato e o alinhamento de itens na barra superior.
-* **Em andamento**: Substituição de imagens de *placeholder* por fotos oficiais e refinamento de cores de fundo.
-* **Concluído**: Ajuste dos ícones da barra superior e configuração inicial do tema.
+**Em andamento**:
+
+**Urgente**:
+* Atualizar cards com imagens e fundos coloridos.
+* Fazer a responsividade do site.
+
+**Pode esperar**:
+* Substituição de imagens de *placeholder* por fotos oficiais e refinamento de cores de fundo.
+* Corrigir a funcionalidade do formulário de contato e o alinhamento de itens na barra superior.
+* Atualizar a página com textos reais.
 
 ## 6. Configurações de Design (Design Tokens)
 
