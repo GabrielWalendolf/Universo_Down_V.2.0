@@ -46,10 +46,11 @@ A organização do projeto segue uma estrutura modular para facilitar a manuten�
 O projeto possui as seguintes necessidades:
 
 **Em andamento**:
+* Fazer a responsividade do site.
 
 **Urgente**:
 * Atualizar cards com imagens e fundos coloridos.
-* Fazer a responsividade do site.
+
 
 **Pode esperar**:
 * Substituição de imagens de *placeholder* por fotos oficiais e refinamento de cores de fundo.
