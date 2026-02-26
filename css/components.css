@@ -1,8 +1,8 @@
-/* ==========================================================
-   COMPONENTES (layout + navbar no estilo inspirado FSDown)
-   ========================================================== */
+/* ===========================================================
+   Topbar, Header/Nav, Seções, Hero, Cards, Parceiros e Footer
+   =========================================================== */
 
-/* Topbar (contatos) */
+/* Topbar */
 .topbar {
   display: flex;
   gap: 1rem;
@@ -64,6 +64,10 @@
 .topbar a:hover {
   border-bottom-color: rgba(255, 255, 255, 0.65);
 }
+
+/* ===============
+   responsividade da topbar (mobile-first, ajustes para telas menores):
+   =============== */
 
 @media (max-width: 768px) {
   .topbar {
@@ -160,7 +164,7 @@ nav a {
   font-weight: 700;
   letter-spacing: 0.3px;
   color: var(--color-text-nav);
-  border-radius: 0;
+  border-radius: var(--radius-md);
   text-decoration: none;
   outline: none;
   white-space: nowrap;
@@ -271,7 +275,7 @@ nav a[aria-current="page"]::after {
 }
 
 
-/* Mobile menu toggle */
+/* menu toggle Mobile de navbar */
 #menuToggle {
   display: none;
   width: 44px;
@@ -284,7 +288,7 @@ nav a[aria-current="page"]::after {
   cursor: pointer;
 }
 
-/* Mobile menu - DESABILITADO */
+/* responsividade do menu mobile/navbar */
 @media (max-width: 1200px) {
   /* Garante que o container nav empurre o botão para a direita */
   nav {
@@ -303,15 +307,11 @@ nav a[aria-current="page"]::after {
     right: 0; /* Cola na direita */
     /* Ajuste o TOP conforme a altura do seu header (testar valores entre 60px e 80px se necessário) */
     top: 100%;
-
     display: none;
     flex-direction: column;
     align-items: stretch;
-
-    /* AQUI ESTÁ A CORREÇÃO DO TAMANHO */
     width: 250px; /* Tamanho fixo mais elegante */
     min-width: auto; /* Remove a largura gigante anterior */
-
     padding: 1rem;
     background: var(--color-bg);
     border: 1px solid var(--color-border);
@@ -336,11 +336,13 @@ nav a[aria-current="page"]::after {
     z-index: auto;
   }
 
+
+  /* Itens do menu/navbar */
   nav a {
     justify-content: flex-start;
     border-radius: var(--radius-sm);
     padding: 0.75rem 0.9rem;
-     color: var(--color-heading); /* Ajuste para legibilidade no dropdown mobile (fundo branco/cinza) */
+    color: var(--color-heading); /* Ajuste para legibilidade no dropdown mobile (fundo branco/cinza) */
 
   }
 
