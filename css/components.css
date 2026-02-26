@@ -246,10 +246,10 @@ nav a[aria-current="page"]::after {
 
 /* Botão de tema */
 #themeToggle {
-  width: clamp(36px, 5vw, 40px);
-  height: clamp(36px, 5vw, 40px);
+  width: clamp(36px, 8vw, 42px);
+  height: clamp(36px, 8vw, 42px);
   border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--color-border-nav);
   background: transparent;
   color: var(--color-text-nav);
   cursor: pointer;
@@ -270,9 +270,18 @@ nav a[aria-current="page"]::after {
   font-size: clamp(18px, 3vw, 22px);
 }
 
-/* Mobile menu toggle - DESABILITADO */
+
+/* Mobile menu toggle */
 #menuToggle {
-  display: none !important;
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-heading);
+  font-size: 1.35rem;
+  cursor: pointer;
 }
 
 /* Mobile menu - DESABILITADO */
@@ -310,6 +319,7 @@ nav a[aria-current="page"]::after {
     box-shadow: -5px 10px 20px rgba(0,0,0,0.15); /* Sombra mais destacada */
     z-index: 1000;
   }
+
 
   nav ul.open {
     background-color: #24292E;
@@ -364,7 +374,7 @@ nav a[aria-current="page"]::after {
 /* Hero / Page Hero */
 .hero,
 .page-hero {
-  padding: clamp(2rem, 6vw, 4.6rem) clamp(0.75rem, 2vw, 1rem);
+  padding: 4.6rem 1rem;
   text-align: center;
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
@@ -372,16 +382,15 @@ nav a[aria-current="page"]::after {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 300px;
+  /* min-height: 300px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .hero-content {
   max-width: 840px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .hero h1,
@@ -392,7 +401,8 @@ nav a[aria-current="page"]::after {
   word-break: break-word;
 }
 
-.hero p {
+.hero p,
+.page-hero p {
   margin: 1rem auto 1.6rem;
   max-width: 60ch;
   color: var(--color-muted-text);
