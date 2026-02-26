@@ -20,11 +20,14 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.65;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 a {
@@ -44,10 +47,10 @@ button:focus-visible {
 
 h1, h2, h3 {
   line-height: 1.2;
-}
-
-h1, h2, h3 {
   color: var(--color-heading);
+  word-break: break-word;
+  margin: 0;
+  overflow-wrap: break-word;
 }
 
 p {

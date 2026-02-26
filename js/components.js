@@ -1,7 +1,4 @@
-// Menu mobile
-document.getElementById("menuToggle")?.addEventListener("click", () => {
-  document.querySelector("nav ul").classList.toggle("open");
-});
+// Menu mobile - DESABILITADO (nav-bar horizontal permanente)
 
 // Cookie banner
 const banner = document.getElementById("cookieBanner");
