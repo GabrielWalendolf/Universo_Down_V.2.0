@@ -384,10 +384,6 @@ nav a[aria-current="page"]::after {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .hero-content {
