@@ -12,6 +12,7 @@
   background: var(--topbar-bg);
   color: var(--topbar-text);
   font-size: 0.92rem;
+  flex-wrap: wrap;
 }
 
 .topbar-left {
@@ -19,72 +20,88 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .images-topbar-center {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: 1 1 auto;
+  justify-content: center;
+  min-width: 0;
 }
 
 .images-ods-topbar {
-  height: 45px;
+  height: clamp(30px, 5vw, 45px);
   width: auto;
   border-radius: var(--radius-md);
+  flex-shrink: 0;
 }
 
 .topbar span {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: clamp(0.75rem, 2vw, 0.92rem);
 }
 
 .topbar .material-symbols-outlined {
   font-size: 1.05rem;
   opacity: 0.95;
+  flex-shrink: 0;
 }
 
 .topbar a {
   color: var(--topbar-text);
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .topbar a:hover {
   border-bottom-color: rgba(255, 255, 255, 0.65);
 }
 
-@media (max-width: 560px) {
-  /* .topbar {
+@media (max-width: 768px) {
+  .topbar {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.35rem;
-  } */
-  /* 1. Ajuste da Topbar */
-  .topbar-inner {
-    flex-direction: column;
-    gap: 0.8rem;
-    padding-bottom: 0.8rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
   }
 
-  /* Esconde as imagens das ODS no celular para limpar o visual */
+  .topbar-left,
   .images-topbar-center {
-    display: none;
+    width: 100%;
+    justify-content: center;
   }
 
-  .topbar-left {
-    align-items: center; /* Centraliza contatos */
-    text-align: center;
+  .topbar span {
+    font-size: 0.85rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 0.4rem 0.5rem;
+    gap: 0.3rem;
   }
 
-  .topbar-left span {
-    flex-direction: column; /* Coloca telefone em cima e email embaixo */
-    gap: 0.2rem;
+  .topbar span {
+    font-size: 0.75rem;
+  }
+
+  .images-ods-topbar {
+    height: 30px;
   }
 
   .header-actions {
     width: 100%;
-    justify-content: center; /* Centraliza redes sociais e tema */
+    justify-content: center;
   }
 }
 
