@@ -19,11 +19,13 @@ include '../includes/header.php';
 
         <div class="cards areas-grid">
           <a href="#ep" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true"
-              >school</span
-            >
+
+            <img src="../assets/img/ods_3.png" alt="Imagem representativa de Estimulação Precoce" class="card-img">
+
+            <span class="material-symbols-outlined" aria-hidden="true">school</span>
             <h3>EP</h3>
             <p>Estimulação Precoce</p>
+
           </a>
 
           <a href="#aee" class="card" aria-controls="areaDetail">
