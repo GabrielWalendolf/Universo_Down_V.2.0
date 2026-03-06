@@ -128,7 +128,7 @@
 }
 
 .logo {
-  height: clamp(36px, 6vw, 44px);
+  height: clamp(180px, 6vw, 180px);
   width: auto;
   flex-shrink: 0;
 }

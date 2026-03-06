@@ -53,7 +53,7 @@ $current_page = isset($current_page) ? $current_page : 'home';
 
     <header class="header">
       <div class="container header-inner">
-        <img src="<?php echo $base_path; ?>assets/img/logo-placeholder.svg" alt="Universo Down" class="logo" />
+        <img src="<?php echo $base_path; ?>assets/img/universo-down-logo.svg" alt="Universo Down" class="logo" />
         <nav id="nav">
           <button id="menuToggle" aria-label="Abrir menu">☰</button>
           <ul>
