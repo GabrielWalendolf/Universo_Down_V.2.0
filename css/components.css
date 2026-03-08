@@ -244,8 +244,8 @@ nav a[aria-current="page"]::after {
   height: 18px;
   fill: currentColor;
   color: var(--color-text-nav);
-  display: block; /* Adicione isso */
-  margin: 0;      /* Garante que não haja margem extra */
+  display: block;
+  margin: 0;
 }
 
 /* Botão de tema */
@@ -290,7 +290,6 @@ nav a[aria-current="page"]::after {
 
 /* responsividade do menu mobile/navbar */
 @media (max-width: 1200px) {
-  /* Garante que o container nav empurre o botão para a direita */
   nav {
     justify-content: flex-end;
   }
@@ -298,54 +297,51 @@ nav a[aria-current="page"]::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto; /* Força o botão para a direita extrema */
+    margin-left: auto;
   }
 
-  /* Estilo do Menu Aberto */
   nav ul {
     position: absolute;
-    right: 0; /* Cola na direita */
-    /* Ajuste o TOP conforme a altura do seu header (testar valores entre 60px e 80px se necessário) */
+    right: 0;
     top: 100%;
     display: none;
     flex-direction: column;
     align-items: stretch;
-    width: 250px; /* Tamanho fixo mais elegante */
-    min-width: auto; /* Remove a largura gigante anterior */
+    width: 250px;
+    min-width: auto;
     padding: 1rem;
     background: var(--color-bg);
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-md); /* Arredonda apenas o canto inferior esquerdo */
-    box-shadow: -5px 10px 20px rgba(0,0,0,0.15); /* Sombra mais destacada */
+    border-radius: var(--radius-md);
+    box-shadow: -5px 10px 20px rgba(0,0,0,0.15);
     z-index: 1000;
   }
 
-
   nav ul.open {
-    background-color: #24292E;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    max-height: none;
-    padding: 0;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    overflow: visible;
-    z-index: auto;
+    flex-direction: column;
+    align-items: stretch;
+    width: 250px;
+    padding: 1rem;
+    background: var(--header-nav-bg);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: -5px 10px 20px rgba(0,0,0,0.25);
   }
 
-
-  /* Itens do menu/navbar */
   nav a {
     justify-content: flex-start;
     border-radius: var(--radius-sm);
     padding: 0.75rem 0.9rem;
-    color: var(--color-heading); /* Ajuste para legibilidade no dropdown mobile (fundo branco/cinza) */
-
+    color: var(--brand-white);
+    border-bottom: none;
   }
 
+  nav a:hover,
+  nav a.active {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--brand-yellow);
+    border-bottom: none;
+  }
 }
 
 /* Seções / Containers */
@@ -373,17 +369,52 @@ nav a[aria-current="page"]::after {
   color: var(--color-muted-text);
 }
 
-/* Hero / Page Hero */
+/* =============================================
+   Hero / Page Hero — responsivo (estilo fsdown)
+   ============================================= */
 .hero,
 .page-hero {
-  padding: 4.6rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(320px, 55vh, 620px);
+  padding: clamp(3rem, 8vw, 6rem) var(--gutter);
   text-align: center;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   background-image: url('../assets/img/test_img.jpg');
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* SEM background-attachment: fixed — quebra em iOS/Safari mobile */
+  overflow: hidden;
+}
+
+/* Overlay escuro para garantir legibilidade sobre a foto */
+.hero::before,
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+
+/* Conteúdo acima do overlay */
+.hero > *,
+.page-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile: altura proporcional à largura da tela, como fsdown */
+@media (max-width: 768px) {
+  .hero,
+  .page-hero {
+    min-height: clamp(220px, 48vw, 380px);
+    background-position: center top;
+  }
 }
 
 .hero-content {
@@ -397,15 +428,19 @@ nav a[aria-current="page"]::after {
   font-size: clamp(1.5rem, 5vw, 3.2rem);
   letter-spacing: -0.6px;
   word-break: break-word;
+  /* texto precisa ser claro sobre a imagem escurecida */
+  color: var(--brand-white);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 
 .hero p,
 .page-hero p {
   margin: 1rem auto 1.6rem;
   max-width: 60ch;
-  color: var(--color-muted-text);
   font-size: clamp(0.9rem, 2vw, 1.05rem);
   word-break: break-word;
+  /* texto claro sobre imagem */
+  color: rgba(255, 255, 255, 0.88);
 }
 
 /* Cards */
@@ -571,7 +606,7 @@ nav a[aria-current="page"]::after {
 
 .footer p {
   margin: 0.35rem 0;
-  color: inherit; /* Herda a cor branca/texto do footer */
+  color: inherit;
   opacity: 0.9;
 }
 
@@ -591,7 +626,7 @@ nav a[aria-current="page"]::after {
   border-bottom: 1px solid transparent;
 }
 
-/* Hover específico solicitado (#FFFF00) */
+/* Hover específico (#FFFF00) */
 .footer-links a:hover,
 .footer a:hover {
   color: var(--footer-hover);
