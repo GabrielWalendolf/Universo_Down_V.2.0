@@ -1,5 +1,6 @@
 # Documentação do Projeto: Universo Down V.2.0
 
+
 ## 1. Visão Geral
 
 O projeto é um site institucional dinâmico desenvolvido em PHP, estruturado para apresentar as áreas de atuação, projetos, história e canais de contato da instituição. O design é responsivo, focado em acessibilidade e oferece suporte a temas claro e escuro.
