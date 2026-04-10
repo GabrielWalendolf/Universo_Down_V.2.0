@@ -173,11 +173,10 @@ body.areas-interactive .areas-details {
   width: 100%;
 }
 
+/* CORRIGIDO: label como bloco simples (não flex column) para evitar label abraçar input */
 .contact-form label {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 0.45rem;
   font-weight: 800;
   color: var(--color-heading);
   font-size: clamp(0.9rem, 2vw, 1rem);
@@ -185,6 +184,8 @@ body.areas-interactive .areas-details {
 
 .contact-form input,
 .contact-form textarea {
+  display: block;
+  margin-bottom: 1rem;
   padding: clamp(0.6rem, 1.5vw, 0.75rem) clamp(0.65rem, 1.5vw, 0.85rem);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -207,9 +208,17 @@ body.areas-interactive .areas-details {
   min-height: 120px;
 }
 
+/* Mensagem de sucesso */
 .success-message {
   margin-top: 1rem;
-  color: var(--color-secondary);
+  color: #007a3d;
+  font-weight: 800;
+}
+
+/* NOVO: Mensagem de erro */
+.error-message {
+  margin-top: 1rem;
+  color: #c0392b;
   font-weight: 800;
 }
 

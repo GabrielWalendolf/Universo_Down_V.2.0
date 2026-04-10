@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Quem Somos | Universo Down';
-$base_path = '../'; // Adiciona '../' para os links de CSS/Imagens saírem da pasta pages e acharem as raízes
+$base_path = '../';
 $current_page = 'quem-somos';
 
 include '../includes/header.php';
@@ -9,8 +9,10 @@ include '../includes/header.php';
     <main>
       <!-- Hero interno -->
       <section class="page-hero">
-        <h1>Quem Somos</h1>
-        <p>Uma associação comprometida com inclusão, respeito e autonomia.</p>
+        <div class="hero-content">
+          <h1>Quem Somos</h1>
+          <p>Uma associação comprometida com inclusão, respeito e autonomia.</p>
+        </div>
       </section>
 
       <!-- História -->
@@ -93,18 +95,9 @@ include '../includes/header.php';
         <h2>Nosso Espaço e Atividades</h2>
 
         <div class="image-grid">
-          <img
-            src="../assets/img/placeholder.jpg"
-            alt="Atividade institucional - placeholder"
-          />
-          <img
-            src="../assets/img/placeholder.jpg"
-            alt="Evento institucional - placeholder"
-          />
-          <img
-            src="../assets/img/placeholder.jpg"
-            alt="Espaço da instituição - placeholder"
-          />
+          <img src="../assets/img/placeholder.jpg" alt="Atividade institucional - placeholder" />
+          <img src="../assets/img/placeholder.jpg" alt="Evento institucional - placeholder" />
+          <img src="../assets/img/placeholder.jpg" alt="Espaço da instituição - placeholder" />
         </div>
       </section>
 
@@ -112,7 +105,7 @@ include '../includes/header.php';
       <section class="section cta">
         <h2>Quer fazer parte dessa história?</h2>
         <p>Entre em contato conosco e conheça nossas iniciativas.</p>
-        <a href="contato.html" class="btn-primary">Fale Conosco</a>
+        <a href="<?php echo $base_path; ?>pages/contato.php" class="btn-primary">Fale Conosco</a>
       </section>
     </main>
 

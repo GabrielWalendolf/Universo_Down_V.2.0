@@ -127,8 +127,9 @@
   min-height: 60px;
 }
 
+/* CORRIGIDO: altura responsiva da logo — era clamp(180px, 6vw, 180px) fixo */
 .logo {
-  height: clamp(180px, 6vw, 180px);
+  height: clamp(48px, 7vw, 72px);
   width: auto;
   flex-shrink: 0;
 }
@@ -387,7 +388,6 @@ nav a[aria-current="page"]::after {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  /* SEM background-attachment: fixed — quebra em iOS/Safari mobile */
   overflow: hidden;
 }
 
@@ -401,14 +401,14 @@ nav a[aria-current="page"]::after {
   pointer-events: none;
 }
 
-/* Conteúdo acima do overlay */
+/* Conteúdo acima do overlay — cobre tanto filhos diretos quanto .hero-content */
 .hero > *,
 .page-hero > * {
   position: relative;
   z-index: 1;
 }
 
-/* Mobile: altura proporcional à largura da tela, como fsdown */
+/* Mobile: altura proporcional à largura da tela */
 @media (max-width: 768px) {
   .hero,
   .page-hero {
@@ -417,29 +417,37 @@ nav a[aria-current="page"]::after {
   }
 }
 
+/* hero-content é o wrapper centralizado usado em .hero e .page-hero */
 .hero-content {
   max-width: 840px;
+  width: 100%;
   margin: 0 auto;
 }
 
+/* h1 e p dentro de qualquer hero — via hero-content ou filhos diretos */
+.hero-content h1,
+.hero-content p {
+  /* herda o z-index do pai via .hero > * / .page-hero > * */
+}
+
 .hero h1,
-.page-hero h1 {
+.page-hero h1,
+.hero-content h1 {
   margin: 0;
   font-size: clamp(1.5rem, 5vw, 3.2rem);
   letter-spacing: -0.6px;
   word-break: break-word;
-  /* texto precisa ser claro sobre a imagem escurecida */
   color: var(--brand-white);
   text-shadow: 0 2px 12px rgba(0,0,0,0.4);
 }
 
 .hero p,
-.page-hero p {
+.page-hero p,
+.hero-content p {
   margin: 1rem auto 1.6rem;
   max-width: 60ch;
   font-size: clamp(0.9rem, 2vw, 1.05rem);
   word-break: break-word;
-  /* texto claro sobre imagem */
   color: rgba(255, 255, 255, 0.88);
 }
 

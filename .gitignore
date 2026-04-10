@@ -1,0 +1,94 @@
+# ============================================================
+#  .gitignore — Universo Down
+#  Gerado para projeto PHP puro (sem framework/build tools)
+# ============================================================
+
+# ── Configurações sensíveis ──────────────────────────────────
+# Crie um config.php local com credenciais e NUNCA comite
+config.php
+config.local.php
+.env
+.env.*
+!.env.example
+
+# ── Uploads e arquivos gerados pelo usuário ──────────────────
+# Fotos reais, documentos enviados via formulário etc.
+# Mantenha a pasta mas ignore o conteúdo (exceto .gitkeep)
+assets/img/uploads/
+assets/docs/uploads/
+!assets/img/uploads/.gitkeep
+!assets/docs/uploads/.gitkeep
+
+# ── Logs e cache ────────────────────────────────────────────
+*.log
+logs/
+cache/
+tmp/
+temp/
+
+# ── Dependências (se usar Composer no futuro) ────────────────
+vendor/
+composer.lock
+
+# ── Node / ferramentas de frontend (se usar no futuro) ───────
+node_modules/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+
+# ── Sistemas operacionais ────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ── Editores e IDEs ──────────────────────────────────────────
+# VSCode
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# JetBrains (PHPStorm, WebStorm etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+
+# ── Arquivos de backup ───────────────────────────────────────
+*.bak
+*.backup
+*.orig
+*.save
+
+# ── Arquivos compactados gerados localmente ──────────────────
+*.zip
+*.tar.gz
+*.rar
+# Exceção: assets que fazem parte do projeto (ex: download)
+!assets/downloads/*.zip
+
+# ── PHP ──────────────────────────────────────────────────────
+# Arquivo de configuração do servidor local
+.htaccess.local
+php.ini.local
