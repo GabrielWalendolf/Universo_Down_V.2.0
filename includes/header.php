@@ -41,9 +41,9 @@ if (!empty($hero_image)) {
         <div class="topbar-left">
           <span>
             <i class="fi fi-sr-phone-call"></i>
-            <a href="tel:+550000000000">00 0000-0000</a> |
+            <a href="tel:+554734232102">(47) 3423-2102</a> |
             <i class="fi fi-sr-envelope"></i>
-            <a href="mailto:contato@universodown.org">contato@universodown.org</a>
+            <a href="mailto:adesd.joinville@yahoo.com.br">adesd.joinville@yahoo.com.br</a>
           </span>
         </div>
         <div class="images-topbar-center">
@@ -54,14 +54,11 @@ if (!empty($hero_image)) {
         </div>
         <div class="header-actions">
           <div class="social-links" aria-label="Redes sociais">
-            <a href="https://www.linkedin.com/"   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/universo-down/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i class="fi fi-brands-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com"   target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/universodown/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i class="fi fi-brands-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com"    target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <i class="fi fi-brands-facebook"></i>
             </a>
           </div>
           <button id="themeToggle" aria-label="Alternar tema claro/escuro">
