@@ -122,7 +122,18 @@ include '../includes/header.php';
       <section class="section">
         <h2>Onde Estamos</h2>
         <p>Rua Ministro Calógeras, 758 / R. Conselheiro Mafra, 258 — Centro, Joinville/SC, CEP 89201-480</p>
-        <div class="map-placeholder">Mapa (placeholder)</div>
+        <div class="map-container">
+          <iframe
+            src="https://maps.google.com/maps?q=Rua+Ministro+Cal%C3%B3geras,+758,+Centro,+Joinville,+SC,+89201-480&hl=pt-BR&z=16&output=embed"
+            title="Localização da Universo Down no Google Maps"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
 
