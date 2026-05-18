@@ -8,9 +8,8 @@
  */
 
 // ─── CONFIGURAÇÕES ────────────────────────────────────────────────
-define('MAIL_TO',      'contato@universodown.org'); // destino
-define('MAIL_SUBJECT', '[Site] Trabalhe Conosco — nova mensagem');
-define('ALLOWED_ORIGIN', 'https://universodown.org'); // domínio do site
+define('MAIL_TO',      'adesd.joinville@yahoo.com.br');
+define('MAIL_SUBJECT', '[Site] Trabalhe Conosco — Universo Down');
 // ──────────────────────────────────────────────────────────────────
 
 header('Content-Type: application/json; charset=utf-8');
@@ -57,7 +56,7 @@ $corpo  = "Nome: {$nome}\n";
 $corpo .= "E-mail: {$email}\n\n";
 $corpo .= "Mensagem:\n{$mensagem}\n";
 
-$headers  = "From: Site Universo Down <noreply@universodown.org>\r\n";
+$headers  = "From: Site Universo Down <adesd.joinville@yahoo.com.br>\r\n";
 $headers .= "Reply-To: {$nome} <{$email}>\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";

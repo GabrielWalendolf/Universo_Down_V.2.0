@@ -141,7 +141,7 @@ include '../includes/header.php';
         submitBtn.textContent = 'Enviando…';
 
         try {
-          const res = await fetch('<?php echo $base_path; ?>send-mail.php', {
+          const res = await fetch('<?php echo $base_path; ?>send-email.php', {
             method: 'POST',
             body: new FormData(form),
           });
