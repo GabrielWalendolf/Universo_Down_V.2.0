@@ -28,8 +28,7 @@ $base_path = isset($base_path) ? $base_path : '';
             <p><strong>Horários</strong></p>
             <p>Segunda à sexta: 8h às 12h e 13h às 17h</p>
             <nav class="footer-links" aria-label="Links institucionais">
-              <a href="#"                                               rel="nofollow">Política de Privacidade</a>
-              <a href="#"                                               rel="nofollow">Transparência</a>
+              <a href="#" rel="nofollow">Política de Privacidade</a>
             </nav>
           </div>
         </div>
