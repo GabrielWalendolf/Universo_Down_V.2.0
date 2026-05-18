@@ -1,3 +1,10 @@
+// Header scroll shadow
+const header = document.querySelector('.header');
+if (header) {
+  const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', updateHeader, { passive: true });
+}
+
 const areaGrid = document.querySelector(".areas-grid");
 const areaDetail = document.getElementById("areaDetail");
 
