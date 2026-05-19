@@ -274,3 +274,28 @@ body.areas-interactive .areas-details {
   font-size: clamp(0.9rem, 2vw, 1.05rem);
   margin-bottom: 1.5rem;
 }
+
+/* ODS Cards */
+.ods-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.ods-card img {
+  width: clamp(60px, 12vw, 90px);
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.ods-card h3 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+.ods-card p {
+  margin: 0;
+  font-size: clamp(0.8rem, 2vw, 0.95rem);
+}

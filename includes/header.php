@@ -46,12 +46,6 @@ if (!empty($hero_image)) {
             <a href="mailto:adesd.joinville@yahoo.com.br">adesd.joinville@yahoo.com.br</a>
           </span>
         </div>
-        <div class="images-topbar-center">
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_3.png"  alt="ODS 3 — Saúde e Bem-Estar"                class="images-ods-topbar" width="45" height="45" />
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_4.jpg"  alt="ODS 4 — Educação de Qualidade"            class="images-ods-topbar" width="45" height="45" />
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_8.png"  alt="ODS 8 — Trabalho Decente e Crescimento"   class="images-ods-topbar" width="45" height="45" />
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_11.png" alt="ODS 11 — Cidades e Comunidades Sustentáveis" class="images-ods-topbar" width="45" height="45" />
-        </div>
         <div class="header-actions">
           <div class="social-links" aria-label="Redes sociais">
             <a href="https://www.linkedin.com/company/universo-down/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

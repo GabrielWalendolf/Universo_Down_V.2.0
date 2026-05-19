@@ -53,6 +53,34 @@ include 'includes/header.php';
       </p>
     </section>
 
+    <!-- ODS -->
+    <section class="section">
+      <h2>Compromisso com os ODS</h2>
+      <p>Atuamos em alinhamento com os Objetivos de Desenvolvimento Sustentável da ONU.</p>
+      <div class="cards">
+        <div class="card ods-card">
+          <img src="<?php echo $base_path; ?>assets/img/ods/ods_3.png"  alt="ODS 3 — Saúde e Bem-Estar" loading="lazy" />
+          <h3>ODS 3</h3>
+          <p>Saúde e Bem-Estar</p>
+        </div>
+        <div class="card ods-card">
+          <img src="<?php echo $base_path; ?>assets/img/ods/ods_4.jpg"  alt="ODS 4 — Educação de Qualidade" loading="lazy" />
+          <h3>ODS 4</h3>
+          <p>Educação de Qualidade</p>
+        </div>
+        <div class="card ods-card">
+          <img src="<?php echo $base_path; ?>assets/img/ods/ods_8.png"  alt="ODS 8 — Trabalho Decente e Crescimento Econômico" loading="lazy" />
+          <h3>ODS 8</h3>
+          <p>Trabalho Decente e Crescimento Econômico</p>
+        </div>
+        <div class="card ods-card">
+          <img src="<?php echo $base_path; ?>assets/img/ods/ods_11.png" alt="ODS 11 — Cidades e Comunidades Sustentáveis" loading="lazy" />
+          <h3>ODS 11</h3>
+          <p>Cidades e Comunidades Sustentáveis</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Áreas -->
     <section class="section">
       <h2>Áreas de Atuação</h2>
