@@ -584,23 +584,16 @@ nav a[aria-current="page"]::after {
   transform: translateY(0);
 }
 
-/* Parceiros — carrossel interativo */
+/* Parceiros — carrossel infinito interativo */
 .partners-carousel {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
   cursor: grab;
   margin-top: 1.8rem;
   width: 100%;
   user-select: none;
   -webkit-user-select: none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
   mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-}
-
-.partners-carousel::-webkit-scrollbar {
-  display: none;
 }
 
 .partners-carousel.is-dragging {
@@ -615,6 +608,7 @@ nav a[aria-current="page"]::after {
   gap: clamp(1rem, 3vw, 2rem);
   width: max-content;
   padding: 0.75rem clamp(0.5rem, 2vw, 1rem);
+  will-change: transform;
 }
 
 .partner-item {

@@ -1,41 +1,78 @@
-// Partners carousel — wheel scroll + drag
+// Partners carousel — infinite scroll + wheel + drag
 const partnersCarousel = document.querySelector('.partners-carousel');
 if (partnersCarousel) {
+  const track = partnersCarousel.querySelector('.partners-track');
+
+  // Duplica os itens para criar o loop infinito
+  Array.from(track.querySelectorAll('.partner-item')).forEach(item =>
+    track.appendChild(item.cloneNode(true))
+  );
+
+  let offset = 0;
+  let userInteracting = false;
+  let resumeTimer;
+  let drag = null;
+  let touch = null;
+
+  const setWidth = () => track.scrollWidth / 2;
+
+  const normalize = () => {
+    const sw = setWidth();
+    if (sw > 0) offset = ((offset % sw) + sw) % sw;
+  };
+
+  const pauseAutoScroll = (ms = 2000) => {
+    userInteracting = true;
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => { userInteracting = false; }, ms);
+  };
+
+  (function tick() {
+    if (!userInteracting) offset += 0.5;
+    normalize();
+    track.style.transform = `translateX(-${offset}px)`;
+    requestAnimationFrame(tick);
+  })();
+
   partnersCarousel.addEventListener('wheel', (e) => {
     e.preventDefault();
-    partnersCarousel.scrollLeft += e.deltaY !== 0 ? e.deltaY : e.deltaX;
+    offset += e.deltaY !== 0 ? e.deltaY : e.deltaX;
+    pauseAutoScroll();
   }, { passive: false });
 
-  let dragStart = null;
-
   partnersCarousel.addEventListener('mousedown', (e) => {
-    dragStart = { x: e.pageX, scrollLeft: partnersCarousel.scrollLeft };
+    drag = { x: e.pageX, start: offset };
     partnersCarousel.classList.add('is-dragging');
+    pauseAutoScroll(3000);
     e.preventDefault();
   });
 
   document.addEventListener('mousemove', (e) => {
-    if (!dragStart) return;
-    partnersCarousel.scrollLeft = dragStart.scrollLeft - (e.pageX - dragStart.x) * 1.2;
+    if (!drag) return;
+    offset = drag.start - (e.pageX - drag.x);
   });
 
   document.addEventListener('mouseup', () => {
-    dragStart = null;
+    if (!drag) return;
+    drag = null;
     partnersCarousel.classList.remove('is-dragging');
+    pauseAutoScroll();
   });
 
-  let touchStart = null;
-
   partnersCarousel.addEventListener('touchstart', (e) => {
-    touchStart = { x: e.touches[0].pageX, scrollLeft: partnersCarousel.scrollLeft };
+    touch = { x: e.touches[0].pageX, start: offset };
+    pauseAutoScroll(3000);
   }, { passive: true });
 
   partnersCarousel.addEventListener('touchmove', (e) => {
-    if (!touchStart) return;
-    partnersCarousel.scrollLeft = touchStart.scrollLeft - (e.touches[0].pageX - touchStart.x);
+    if (!touch) return;
+    offset = touch.start - (e.touches[0].pageX - touch.x);
   }, { passive: true });
 
-  partnersCarousel.addEventListener('touchend', () => { touchStart = null; }, { passive: true });
+  partnersCarousel.addEventListener('touchend', () => {
+    touch = null;
+    pauseAutoScroll();
+  }, { passive: true });
 }
 
 // Header scroll shadow
