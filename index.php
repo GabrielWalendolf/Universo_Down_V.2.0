@@ -101,27 +101,16 @@ include 'includes/header.php';
       <h2>Parceiros</h2>
       <div class="partners-carousel" aria-label="Carrossel de parceiros">
         <div class="partners-track">
-          <img src="assets/img/empresas_parceiras/bosch.png"             alt="Bosch"               loading="lazy" />
-          <img src="assets/img/empresas_parceiras/ciser.png"             alt="Ciser"               loading="lazy" />
-          <img src="assets/img/empresas_parceiras/docol.png"             alt="Docol"               loading="lazy" />
-          <img src="assets/img/empresas_parceiras/doterra.png"           alt="doTERRA"             loading="lazy" />
-          <img src="assets/img/empresas_parceiras/fibrasca.png"          alt="Fibrasca"            loading="lazy" />
-          <img src="assets/img/empresas_parceiras/krona.png"             alt="Krona"               loading="lazy" />
-          <img src="assets/img/empresas_parceiras/lasa-outdoor.png"      alt="Lasa Outdoor"        loading="lazy" />
-          <img src="assets/img/empresas_parceiras/magica-comunicacao.png" alt="Mágica Comunicação" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/tigre.png"             alt="Tigre"               loading="lazy" />
-          <img src="assets/img/empresas_parceiras/tupy.png"              alt="Tupy"                loading="lazy" />
-          <!-- duplicata para loop contínuo -->
-          <img src="assets/img/empresas_parceiras/bosch.png"             alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/ciser.png"             alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/docol.png"             alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/doterra.png"           alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/fibrasca.png"          alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/krona.png"             alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/lasa-outdoor.png"      alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/magica-comunicacao.png" alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/tigre.png"             alt="" aria-hidden="true" loading="lazy" />
-          <img src="assets/img/empresas_parceiras/tupy.png"              alt="" aria-hidden="true" loading="lazy" />
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/bosch.png"              alt="Bosch"               loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/ciser.png"              alt="Ciser"               loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/docol.png"              alt="Docol"               loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/doterra.png"            alt="doTERRA"             loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/fibrasca.png"           alt="Fibrasca"            loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/krona.png"              alt="Krona"               loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/lasa-outdoor.png"       alt="Lasa Outdoor"        loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/magica-comunicacao.png" alt="Mágica Comunicação"  loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/tigre.png"              alt="Tigre"               loading="lazy" draggable="false" /></div>
+          <div class="partner-item"><img src="assets/img/empresas_parceiras/tupy.png"               alt="Tupy"                loading="lazy" draggable="false" /></div>
         </div>
       </div>
     </section>

@@ -584,17 +584,27 @@ nav a[aria-current="page"]::after {
   transform: translateY(0);
 }
 
-/* Parceiros — carrossel infinito */
+/* Parceiros — carrossel interativo */
 .partners-carousel {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
   margin-top: 1.8rem;
   width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
-.partners-carousel:hover .partners-track {
-  animation-play-state: paused;
+.partners-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.partners-carousel.is-dragging {
+  cursor: grabbing;
 }
 
 .partners-track {
@@ -602,37 +612,36 @@ nav a[aria-current="page"]::after {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  gap: clamp(2rem, 5vw, 4rem);
+  gap: clamp(1rem, 3vw, 2rem);
   width: max-content;
-  animation: partners-scroll 28s linear infinite;
+  padding: 0.75rem clamp(0.5rem, 2vw, 1rem);
 }
 
-.partners-track img {
+.partner-item {
+  flex-shrink: 0;
+  width: 130px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-item img {
   display: block;
-  height: clamp(40px, 8vw, 65px);
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
-  max-width: none;
+  height: auto;
   object-fit: contain;
   filter: grayscale(100%);
-  opacity: 0.65;
+  opacity: 0.6;
   transition: filter 220ms ease, opacity 220ms ease;
-  flex-shrink: 0;
+  pointer-events: none;
 }
 
-.partners-track img:hover {
+.partner-item:hover img {
   filter: grayscale(0%);
   opacity: 1;
-}
-
-@keyframes partners-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .partners-track img[aria-hidden="true"] {
-    display: none;
-  }
 }
 
 /* Footer */

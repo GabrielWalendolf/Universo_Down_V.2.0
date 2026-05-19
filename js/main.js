@@ -1,3 +1,43 @@
+// Partners carousel — wheel scroll + drag
+const partnersCarousel = document.querySelector('.partners-carousel');
+if (partnersCarousel) {
+  partnersCarousel.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    partnersCarousel.scrollLeft += e.deltaY !== 0 ? e.deltaY : e.deltaX;
+  }, { passive: false });
+
+  let dragStart = null;
+
+  partnersCarousel.addEventListener('mousedown', (e) => {
+    dragStart = { x: e.pageX, scrollLeft: partnersCarousel.scrollLeft };
+    partnersCarousel.classList.add('is-dragging');
+    e.preventDefault();
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!dragStart) return;
+    partnersCarousel.scrollLeft = dragStart.scrollLeft - (e.pageX - dragStart.x) * 1.2;
+  });
+
+  document.addEventListener('mouseup', () => {
+    dragStart = null;
+    partnersCarousel.classList.remove('is-dragging');
+  });
+
+  let touchStart = null;
+
+  partnersCarousel.addEventListener('touchstart', (e) => {
+    touchStart = { x: e.touches[0].pageX, scrollLeft: partnersCarousel.scrollLeft };
+  }, { passive: true });
+
+  partnersCarousel.addEventListener('touchmove', (e) => {
+    if (!touchStart) return;
+    partnersCarousel.scrollLeft = touchStart.scrollLeft - (e.touches[0].pageX - touchStart.x);
+  }, { passive: true });
+
+  partnersCarousel.addEventListener('touchend', () => { touchStart = null; }, { passive: true });
+}
+
 // Header scroll shadow
 const header = document.querySelector('.header');
 if (header) {
