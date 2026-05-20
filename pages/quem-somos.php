@@ -123,11 +123,63 @@ include '../includes/header.php';
         <h2>Nosso Espaço e Atividades</h2>
 
         <div class="image-grid">
-          <img src="../assets/img/placeholder.jpg" alt="Atividade institucional - placeholder" />
-          <img src="../assets/img/placeholder.jpg" alt="Evento institucional - placeholder" />
-          <img src="../assets/img/placeholder.jpg" alt="Espaço da instituição - placeholder" />
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_edu_fisica.jpeg" alt="Sala de Educação Física" loading="lazy" />
+            <figcaption>Educação Física</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_pedagogia_AEE.jpeg" alt="Sala de Pedagogia AEE" loading="lazy" />
+            <figcaption>Pedagogia — AEE</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_pedagogia_SAE.jpeg" alt="Sala de Pedagogia SAE" loading="lazy" />
+            <figcaption>Pedagogia — SAE</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_fisioterapia.jpeg" alt="Sala de Fisioterapia" loading="lazy" />
+            <figcaption>Fisioterapia</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_terapia_ocupacional.jpeg" alt="Sala de Terapia Ocupacional" loading="lazy" />
+            <figcaption>Terapia Ocupacional</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_fonoaudiologia.jpeg" alt="Sala de Fonoaudiologia" loading="lazy" />
+            <figcaption>Fonoaudiologia</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_pscicologia.jpeg" alt="Sala de Psicologia" loading="lazy" />
+            <figcaption>Psicologia</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_musica.jpeg" alt="Sala de Música" loading="lazy" />
+            <figcaption>Música</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_multisensorial.jpeg" alt="Sala Multissensorial" loading="lazy" />
+            <figcaption>Sala Multissensorial</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_informatica.jpeg" alt="Sala de Informática" loading="lazy" />
+            <figcaption>Informática</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/playground.jpeg" alt="Playground" loading="lazy" />
+            <figcaption>Playground</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/mini_cidade.jpeg" alt="Mini Cidade" loading="lazy" />
+            <figcaption>Mini Cidade</figcaption>
+          </figure>
         </div>
       </section>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar imagem ampliada">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
 
       <!-- CTA -->
       <section class="section cta">
@@ -137,4 +189,7 @@ include '../includes/header.php';
       </section>
     </main>
 
-<?php include '../includes/footer.php'; ?>
+<?php
+$extra_scripts = ['js/quem-somos.js'];
+include '../includes/footer.php';
+?>
