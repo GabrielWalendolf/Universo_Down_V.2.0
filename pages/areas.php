@@ -3,7 +3,7 @@ $page_title       = 'Áreas de Atuação | Universo Down';
 $meta_description = 'Conheça as áreas de atuação da Universo Down: EP, AEE, SAE, Clube de Mães, Esporte, Cultura, Clube do Livro e Meio Ambiente.';
 $base_path        = '../';
 $current_page     = 'areas';
-$hero_image       = 'assets/img/test_img.jpg';
+$hero_image       = 'assets/img/hero/fundo_hero.jpg';
 
 include '../includes/header.php';
 ?>

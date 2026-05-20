@@ -3,7 +3,7 @@ $page_title       = 'Universo Down | Inclusão, Autonomia e Desenvolvimento';
 $meta_description = 'Universo Down promove inclusão, autonomia e desenvolvimento para pessoas com Síndrome de Down em Joinville/SC. Conheça nossas áreas de atuação.';
 $base_path        = '';
 $current_page     = 'home';
-$hero_image       = 'assets/img/test_img.jpg';
+$hero_image       = 'assets/img/hero/fundo_hero.jpg';
 
 include 'includes/header.php';
 ?>
