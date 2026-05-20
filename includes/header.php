@@ -29,7 +29,7 @@ if (!empty($hero_image)) {
 }
 ?>
 <!doctype html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR">
   <head>
     <?php include __DIR__ . '/head-meta.php'; ?>
   </head>
@@ -55,9 +55,6 @@ if (!empty($hero_image)) {
               <i class="fi fi-brands-instagram"></i>
             </a>
           </div>
-          <button id="themeToggle" aria-label="Alternar tema claro/escuro">
-            <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
-          </button>
         </div>
       </div>
     </div>

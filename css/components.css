@@ -245,32 +245,6 @@ nav a[aria-current="page"]::after {
   margin: 0;
 }
 
-/* Botão de tema */
-#themeToggle {
-  width: clamp(36px, 8vw, 42px);
-  height: clamp(36px, 8vw, 42px);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--color-border-nav);
-  background: transparent;
-  color: var(--color-text-nav);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
-  flex-shrink: 0;
-}
-
-#themeToggle:hover {
-  transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-#themeToggle .material-symbols-outlined {
-  font-size: clamp(18px, 3vw, 22px);
-}
-
 
 /* menu toggle Mobile de navbar */
 #menuToggle {

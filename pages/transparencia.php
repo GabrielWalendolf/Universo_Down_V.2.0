@@ -3,12 +3,10 @@ $page_title       = 'Transparência | Universo Down';
 $meta_description = 'Acesse documentos, balanços financeiros, atas e certidões da Universo Down. Transparência e prestação de contas.';
 $base_path        = '../';
 $current_page     = 'transparencia';
-$hero_image       = 'assets/img/test_img.jpg';
-
 include '../includes/header.php';
 ?>
     <main>
-      <section class="page-hero"<?php echo hero_style(); ?>>
+      <section class="page-hero page-hero--solid" style="background: #d4d4d4;">
         <div class="hero-content">
           <h1>Transparência</h1>
           <p>Você por dentro de tudo.</p>

@@ -2,6 +2,22 @@
    ESTILOS ESPECÍFICOS DE PÁGINAS
    ========================================================== */
 
+/* Page-hero com cor sólida (sem imagem, sem overlay escuro) */
+.page-hero--solid::before {
+  background: transparent;
+}
+
+.page-hero--solid h1,
+.page-hero--solid .hero-content h1 {
+  color: var(--color-heading);
+  text-shadow: none;
+}
+
+.page-hero--solid p,
+.page-hero--solid .hero-content p {
+  color: var(--color-muted-text);
+}
+
 /* Timeline */
 .timeline {
   list-style: none;
@@ -239,10 +255,18 @@ body.areas-interactive .areas-details {
 /* Image Grid */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(0.75rem, 2vw, 1.25rem);
   margin-top: 1.8rem;
   width: 100%;
+}
+
+@media (max-width: 900px) {
+  .image-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .image-grid { grid-template-columns: 1fr; }
 }
 
 .image-grid figure {

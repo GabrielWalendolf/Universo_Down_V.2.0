@@ -171,6 +171,14 @@ include '../includes/header.php';
             <img src="<?php echo $base_path; ?>assets/img/espacos/mini_cidade.jpeg" alt="Mini Cidade" loading="lazy" />
             <figcaption>Mini Cidade</figcaption>
           </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_EP.jpg" alt="Sala de Estimulação Precoce" loading="lazy" />
+            <figcaption>Estimulação Precoce</figcaption>
+          </figure>
+          <figure class="image-grid-item">
+            <img src="<?php echo $base_path; ?>assets/img/espacos/sala_artes.jpg" alt="Sala de Artes" loading="lazy" />
+            <figcaption>Artes</figcaption>
+          </figure>
         </div>
       </section>
 

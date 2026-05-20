@@ -21,8 +21,7 @@ $extra_scripts = isset($extra_scripts) ? $extra_scripts : [];
 $inline_script = isset($inline_script) ? $inline_script : '';
 ?>
   <!-- Scripts globais -->
-  <script src="<?php echo $base_path; ?>js/theme.js"      defer></script>
-  <script src="<?php echo $base_path; ?>js/components.js" defer></script>
+<script src="<?php echo $base_path; ?>js/components.js" defer></script>
   <script src="<?php echo $base_path; ?>js/main.js"       defer></script>
 
   <?php foreach ($extra_scripts as $script): ?>
