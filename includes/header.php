@@ -82,7 +82,6 @@ if (!empty($hero_image)) {
             <li><a class="<?php echo $current_page === 'areas'            ? 'active' : ''; ?>" href="<?php echo $base_path; ?>pages/areas.php"                <?php echo $current_page === 'areas'            ? 'aria-current="page"' : ''; ?>>Áreas</a></li>
             <li><a class="<?php echo $current_page === 'autonomia'        ? 'active' : ''; ?>" href="<?php echo $base_path; ?>pages/autonomia.php"            <?php echo $current_page === 'autonomia'        ? 'aria-current="page"' : ''; ?>>Autonomia</a></li>
             <li><a class="<?php echo $current_page === 'transparencia'     ? 'active' : ''; ?>" href="<?php echo $base_path; ?>pages/transparencia.php"         <?php echo $current_page === 'transparencia'     ? 'aria-current="page"' : ''; ?>>Transparência</a></li>
-            <li><a class="<?php echo $current_page === 'diretoria'        ? 'active' : ''; ?>" href="<?php echo $base_path; ?>pages/diretoria.php"            <?php echo $current_page === 'diretoria'        ? 'aria-current="page"' : ''; ?>>Diretoria</a></li>
             <li><a class="<?php echo $current_page === 'contato'          ? 'active' : ''; ?>" href="<?php echo $base_path; ?>pages/contato.php"              <?php echo $current_page === 'contato'          ? 'aria-current="page"' : ''; ?>>Contato</a></li>
           </ul>
         </nav>

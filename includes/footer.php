@@ -27,9 +27,6 @@ $base_path = isset($base_path) ? $base_path : '';
           <div class="footer-col">
             <p><strong>Horários</strong></p>
             <p>Segunda à sexta: 8h às 12h e 13h às 17h</p>
-            <nav class="footer-links" aria-label="Links institucionais">
-              <a href="#" rel="nofollow">Política de Privacidade</a>
-            </nav>
           </div>
         </div>
       </div>

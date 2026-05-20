@@ -42,23 +42,7 @@ include '../includes/header.php';
         </p>
       </section>
 
-      <!-- Links úteis -->
-      <section class="section">
-        <h2>Links Úteis</h2>
-        <ul class="links-list">
-          <li>
-            <a href="#" aria-label="Link externo placeholder">Organização de apoio (placeholder)</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Link externo placeholder">Material educativo (placeholder)</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Link externo placeholder">Guia para famílias (placeholder)</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- CTA -->
+<!-- CTA -->
       <section class="section cta">
         <h2>Quer saber mais?</h2>
         <p>
