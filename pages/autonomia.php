@@ -89,12 +89,6 @@ include '../includes/header.php';
         </div>
       </section>
 
-      <!-- CTA -->
-      <section class="section cta">
-        <h2>Quer conhecer nossos projetos?</h2>
-        <p>Veja as iniciativas em andamento e como participar.</p>
-        <a href="<?php echo $base_path; ?>pages/projetos.php" class="btn-primary">Conheça nossos Projetos</a>
-      </section>
     </main>
 
 <?php include '../includes/footer.php'; ?>

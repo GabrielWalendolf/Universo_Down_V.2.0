@@ -1,6 +1,6 @@
 <?php
 $page_title       = 'Universo Down | Inclusão, Autonomia e Desenvolvimento';
-$meta_description = 'Universo Down promove inclusão, autonomia e desenvolvimento para pessoas com Síndrome de Down em Joinville/SC. Conheça nossas áreas e projetos.';
+$meta_description = 'Universo Down promove inclusão, autonomia e desenvolvimento para pessoas com Síndrome de Down em Joinville/SC. Conheça nossas áreas de atuação.';
 $base_path        = '';
 $current_page     = 'home';
 $hero_image       = 'assets/img/test_img.jpg';
@@ -16,31 +16,6 @@ include 'includes/header.php';
         <a href="<?php echo $base_path; ?>pages/quem-somos.php" class="btn-primary">
           Conheça a Universo Down
         </a>
-      </div>
-    </section>
-
-    <!-- Destaques -->
-    <section class="section">
-      <h2>Acontecendo Agora</h2>
-      <div class="cards">
-        <article class="card">
-          <span class="tag">Evento</span>
-          <h3>Semana da Inclusão</h3>
-          <p>Atividades educativas e culturais abertas à comunidade.</p>
-          <a href="<?php echo $base_path; ?>pages/projetos.php">Leia mais</a>
-        </article>
-        <article class="card">
-          <span class="tag">Ativo</span>
-          <h3>Programa de Autonomia</h3>
-          <p>Formação para vida social e mercado de trabalho.</p>
-          <a href="<?php echo $base_path; ?>pages/autonomia.php">Leia mais</a>
-        </article>
-        <article class="card">
-          <span class="tag">Projeto</span>
-          <h3>Clube de Mães</h3>
-          <p>Espaço de troca, apoio e fortalecimento.</p>
-          <a href="<?php echo $base_path; ?>pages/areas.php#clube-maes">Leia mais</a>
-        </article>
       </div>
     </section>
 
