@@ -23,49 +23,41 @@ include '../includes/header.php';
 
         <div class="cards areas-grid">
           <a href="#ep" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">school</span>
             <h3>EP</h3>
             <p>Estimulação Precoce</p>
           </a>
 
           <a href="#aee" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
             <h3>AEE</h3>
             <p>Atendimento Educacional Especializado</p>
           </a>
 
           <a href="#sae" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">psychology</span>
             <h3>SAE</h3>
             <p>Serviço de Atendimento Especializado</p>
           </a>
 
           <a href="#clube-maes" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">groups</span>
             <h3>Clube de Mães</h3>
             <p>Apoio e troca de experiências</p>
           </a>
 
           <a href="#esporte" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">sports_soccer</span>
             <h3>Esporte</h3>
             <p>Atividades físicas inclusivas</p>
           </a>
 
           <a href="#cultura" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">palette</span>
             <h3>Cultura</h3>
             <p>Expressão artística e cultural</p>
           </a>
 
           <a href="#clube-livros" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">menu_book</span>
             <h3>Clube do Livro</h3>
             <p>Incentivo à leitura e comunicação</p>
           </a>
 
           <a href="#meio-ambiente-sustentabilidade" class="card" aria-controls="areaDetail">
-            <span class="material-symbols-outlined" aria-hidden="true">eco</span>
             <h3>Meio Ambiente e Sustentabilidade</h3>
             <p>Conscientização ambiental e ações sustentáveis</p>
           </a>

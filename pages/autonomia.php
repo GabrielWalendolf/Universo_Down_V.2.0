@@ -21,7 +21,7 @@ include '../includes/header.php';
 
         <div class="cards">
           <div class="card">
-            <span class="material-symbols-outlined" aria-hidden="true">work</span>
+            <i class="fi fi-sr-briefcase" aria-hidden="true"></i>
             <h3>Mercado de Trabalho</h3>
             <p>
               Preparação, orientação e apoio para inserção profissional em
@@ -30,7 +30,7 @@ include '../includes/header.php';
           </div>
 
           <div class="card">
-            <span class="material-symbols-outlined" aria-hidden="true">diversity_3</span>
+            <i class="fi fi-sr-users" aria-hidden="true"></i>
             <h3>Vida Social</h3>
             <p>
               Estímulo à convivência, comunicação e participação em atividades
@@ -39,7 +39,7 @@ include '../includes/header.php';
           </div>
 
           <div class="card">
-            <span class="material-symbols-outlined" aria-hidden="true">self_improvement</span>
+            <i class="fi fi-sr-star" aria-hidden="true"></i>
             <h3>Independência</h3>
             <p>
               Desenvolvimento de habilidades para a vida diária e tomada de
@@ -48,7 +48,7 @@ include '../includes/header.php';
           </div>
 
           <div class="card">
-            <span class="material-symbols-outlined" aria-hidden="true">family_restroom</span>
+            <i class="fi fi-sr-heart" aria-hidden="true"></i>
             <h3>Apoio à Família</h3>
             <p>
               Orientação e fortalecimento do núcleo familiar no processo de

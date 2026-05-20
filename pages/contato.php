@@ -22,7 +22,7 @@ include '../includes/header.php';
 
         <div class="cards contact-cards">
           <div class="card">
-            <span class="material-symbols-outlined">mail</span>
+            <i class="fi fi-sr-envelope"></i>
             <h3>E-mail</h3>
             <p>
               <a href="mailto:adesd.joinville@yahoo.com.br">adesd.joinville@yahoo.com.br</a>
@@ -30,13 +30,16 @@ include '../includes/header.php';
           </div>
 
           <div class="card">
-            <span class="material-symbols-outlined">call</span>
-            <h3>Telefone</h3>
-            <p><a href="tel:+554734232102">(47) 3423-2102</a></p>
+            <i class="fi fi-brands-whatsapp"></i>
+            <h3>Telefone / WhatsApp</h3>
+            <p>
+              <a href="https://wa.me/5547992831569?text=Venho%20atrav%C3%A9s%20do%20Site" target="_blank" rel="noopener noreferrer">(47) 99283-1569</a><br>
+              <a href="tel:+554734232102">(47) 3423-2102</a>
+            </p>
           </div>
 
           <div class="card">
-            <span class="material-symbols-outlined">share</span>
+            <i class="fi fi-sr-share"></i>
             <h3>Redes Sociais</h3>
             <p>
               <a href="https://www.instagram.com/universodown/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a> |
