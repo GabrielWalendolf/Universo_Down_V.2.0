@@ -44,6 +44,7 @@
   width: 100%;
   text-align: left;
   padding: clamp(0.75rem, 2vw, 1rem) clamp(0.85rem, 2vw, 1.1rem);
+  min-height: 44px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-bg);
@@ -90,6 +91,9 @@
 
 .filter-btn {
   padding: clamp(0.45rem, 1.5vw, 0.55rem) clamp(0.7rem, 2vw, 0.9rem);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   border: 1px solid var(--color-border);
   background: var(--color-bg);
   border-radius: 999px;
@@ -240,7 +244,7 @@ body.areas-interactive .areas-details {
 
 /* Map */
 .map-container {
-  height: clamp(600px, 70vw, 600px);
+  height: clamp(280px, 70vw, 500px);
   border-radius: var(--radius-lg);
   overflow: hidden;
   width: 100%;
@@ -340,6 +344,11 @@ body.areas-interactive .areas-details {
   border: none;
   line-height: 1;
   padding: 0.25rem 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.85;
   transition: opacity 120ms ease;
 }
