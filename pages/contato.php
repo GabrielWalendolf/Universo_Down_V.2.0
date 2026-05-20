@@ -3,7 +3,7 @@ $page_title       = 'Contato | Universo Down';
 $meta_description = 'Entre em contato com a Universo Down. Fale conosco, apoie nossas ações ou faça parte da equipe em Joinville/SC.';
 $base_path        = '../';
 $current_page     = 'contato';
-$hero_image       = 'assets/img/hero/teste.png';
+$hero_image       = 'assets/img/hero/pessoa-mexendo-computador.png';
 
 include '../includes/header.php';
 ?>
