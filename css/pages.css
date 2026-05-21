@@ -186,6 +186,90 @@ body.areas-interactive .areas-details {
   font-size: clamp(0.9rem, 2vw, 1.1rem);
 }
 
+/* Doação */
+.donation {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.donation-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.donation-left img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.donation-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.pix-copy {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pix-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted, #888);
+}
+
+.pix-key-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pix-key-row code {
+  font-family: monospace;
+  font-size: 0.95rem;
+  background: var(--color-surface-alt, #f4f4f4);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  user-select: all;
+}
+
+.btn-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-copy:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.pix-feedback {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  min-height: 1em;
+}
+
 /* Forms */
 .contact-form {
   max-width: 540px;

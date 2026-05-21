@@ -53,10 +53,22 @@ include '../includes/header.php';
       <section class="section">
         <h2>Como Doar</h2>
         <div class="donation">
-          <img src="../assets/img/qrcode/QRcode_associacao.jpeg" alt="QR Code para doação" />
-          <p>
+          <div class="donation-left">
+            <img src="../assets/img/qrcode/QRcode_associacao.jpeg" alt="QR Code para doação" />
+            <div class="pix-copy">
+              <span class="pix-label">Pix CNPJ</span>
+              <div class="pix-key-row">
+                <code id="pixKey">81144099000105</code>
+                <button type="button" class="btn-copy" onclick="copyPix()" aria-label="Copiar chave Pix">
+                  <i class="fi fi-rr-copy"></i> Copiar
+                </button>
+              </div>
+              <span class="pix-feedback" id="pixFeedback" aria-live="polite"></span>
+            </div>
+          </div>
+          <p class="donation-text">
             Sua contribuição ajuda a manter nossos projetos e ações. Utilize o
-            QR Code ao lado para realizar sua doação.
+            QR Code ao lado ou a chave Pix para realizar sua doação.
           </p>
         </div>
       </section>
@@ -141,6 +153,15 @@ include '../includes/header.php';
     </main>
 
     <script>
+      function copyPix() {
+        const key = document.getElementById('pixKey').textContent;
+        navigator.clipboard.writeText(key).then(() => {
+          const feedback = document.getElementById('pixFeedback');
+          feedback.textContent = 'Chave copiada!';
+          setTimeout(() => { feedback.textContent = ''; }, 2500);
+        });
+      }
+
       const form = document.getElementById('workForm');
       const successMsg = document.getElementById('formSuccess');
       const errorMsg = document.getElementById('formError');
