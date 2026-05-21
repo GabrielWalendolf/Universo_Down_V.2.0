@@ -58,37 +58,6 @@ include '../includes/header.php';
         </div>
       </section>
 
-      <!-- Depoimentos -->
-      <section class="section">
-        <h2>Depoimentos</h2>
-
-        <div class="cards testimonials">
-          <div class="card">
-            <img src="../assets/img/placeholder.jpg" alt="Depoimento - placeholder" />
-            <p>
-              "A Universo Down transformou a forma como enxergamos o potencial
-              de nossos filhos."
-            </p>
-            <strong>Familiar (placeholder)</strong>
-          </div>
-
-          <div class="card">
-            <img src="../assets/img/placeholder.jpg" alt="Depoimento - placeholder" />
-            <p>
-              "O apoio recebido foi essencial para o desenvolvimento da
-              autonomia."
-            </p>
-            <strong>Participante (placeholder)</strong>
-          </div>
-
-          <div class="card">
-            <img src="../assets/img/placeholder.jpg" alt="Depoimento - placeholder" />
-            <p>"Um trabalho sério, humano e transformador."</p>
-            <strong>Parceiro (placeholder)</strong>
-          </div>
-        </div>
-      </section>
-
     </main>
 
 <?php include '../includes/footer.php'; ?>

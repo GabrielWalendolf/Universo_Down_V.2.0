@@ -53,7 +53,7 @@ include '../includes/header.php';
       <section class="section">
         <h2>Como Doar</h2>
         <div class="donation">
-          <img src="../assets/img/qr-doacao.png" alt="QR Code para doação - placeholder" />
+          <img src="../assets/img/qrcode/QRcode_associacao.jpeg" alt="QR Code para doação" />
           <p>
             Sua contribuição ajuda a manter nossos projetos e ações. Utilize o
             QR Code ao lado para realizar sua doação.
