@@ -21,11 +21,13 @@ Site institucional da **Universo Down**, associação de Joinville/SC que promov
 ```
 universo-down/
 ├── index.php                  # Página inicial
+├── send-email.php             # Backend do formulário de contato (PHPMailer)
+├── config.php                 # Credenciais SMTP — NÃO commitado (.gitignore)
 ├── pages/                     # Páginas internas
 │   ├── areas.php
 │   ├── autonomia.php
 │   ├── contato.php
-│   ├── diretoria.php
+│   ├── diretoria.php          # Existe mas NÃO está na navegação (conteúdo pendente)
 │   ├── projetos.php
 │   ├── quem-somos.php
 │   └── sindrome-de-down.php
@@ -34,17 +36,27 @@ universo-down/
 │   ├── footer.php             # Rodapé + scripts globais
 │   ├── head-meta.php          # Meta tags SEO, Open Graph, favicon
 │   └── scripts.php            # Scripts do rodapé (permite $extra_scripts)
+├── lib/
+│   └── phpmailer/             # PHPMailer (instalação manual, sem Composer)
+│       ├── PHPMailer.php
+│       ├── SMTP.php
+│       └── Exception.php
 ├── assets/
 │   ├── css/
-│   │   ├── base.css           # Reset, variáveis CSS (design tokens)
+│   │   ├── base.css           # Reset e utilitários globais
 │   │   ├── components.css     # Cards, botões, nav, hero
 │   │   ├── pages.css          # Estilos específicos por página
-│   │   └── themes.css         # Tema claro/escuro
+│   │   └── themes.css         # Design tokens (variáveis CSS) + tema claro/escuro
 │   ├── js/
 │   │   ├── main.js            # Lógica global
 │   │   ├── components.js      # Comportamento de componentes (cards, filtros)
 │   │   └── theme.js           # Toggle claro/escuro
 │   └── img/
+│       ├── favicon.png        # Favicon do site (planetinha)
+│       ├── qrcode/            # QR Code para doação
+│       ├── empresas_parceiras/# Logos dos parceiros
+│       ├── hero/              # Imagens dos heroes
+│       ├── espacos/           # Fotos dos espaços
 │       ├── uploads/           # Imagens enviadas (ignorado pelo git)
 │       └── universo-down-logo.svg
 ├── .gitignore
@@ -125,18 +137,17 @@ include '../includes/footer.php';
 
 ## Formulário de Contato
 
-- `contato.php` tem o formulário HTML — backend ainda não implementado
-- Integração planejada: PHPMailer ou `mail()` nativo do PHP
-- Número de WhatsApp ainda está como placeholder `<NUMERO>` no código
+- `contato.php` tem o formulário HTML + botão WhatsApp + seção de doação (QR Code + Pix)
+- `send-email.php` processa o envio via **PHPMailer + Gmail SMTP**
+- Credenciais em `config.php` (não commitado): `SMTP_USER`, `SMTP_PASS`, `MAIL_TO`
+- WhatsApp: `(47) 99283-1569` — já configurado em `contato.php` e `footer.php`
+- Pix CNPJ: `81144099000105` — com botão "copiar" em `contato.php`
 
 ---
 
 ## Conteúdo Pendente (não alterar estrutura, apenas preencher)
 
-- Fotos e nomes da diretoria em `diretoria.php`
-- Logos dos parceiros em `assets/img/`
-- QR Code de doação
-- Número de WhatsApp real
+- Fotos e nomes da diretoria em `diretoria.php` (página oculta da nav até estar pronta)
 - Textos reais nas páginas `autonomia.php` e `sindrome-de-down.php`
 
 ---
@@ -151,7 +162,7 @@ include '../includes/footer.php';
 
 ## O que nunca fazer
 
-- Não introduzir dependências npm ou Composer sem alinhamento prévio
+- Não introduzir novas dependências npm ou Composer sem alinhamento prévio (PHPMailer já está em `lib/phpmailer/` via instalação manual)
 - Não usar links `.html` — o site usa `.php` em todas as páginas
 - Não duplicar footer, scripts ou meta tags dentro das páginas
 - Não commitar `config.php`, `.env` ou arquivos com credenciais
