@@ -49,7 +49,6 @@ $canonical   = $protocol . '://' . $host . $request_uri;
 
   <!-- Identidade e favicon -->
   <meta name="theme-color" content="#0081BA" />
-  <link rel="icon"             type="image/svg+xml"  href="<?php echo $base_path; ?>assets/img/favicon.svg" />
   <link rel="icon"             type="image/png"      href="<?php echo $base_path; ?>assets/img/favicon.png" sizes="32x32" />
   <link rel="apple-touch-icon"                       href="<?php echo $base_path; ?>assets/img/apple-touch-icon.png" />
 

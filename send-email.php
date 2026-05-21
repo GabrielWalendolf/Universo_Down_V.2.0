@@ -1,45 +1,28 @@
 <?php
-/**
- * send-mail.php
- * Processa o formulário "Trabalhe Conosco" de contato.php
- * Coloque este arquivo na raiz do projeto (mesmo nível de index.php).
- *
- * Configuração: altere apenas as constantes abaixo.
- */
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/lib/phpmailer/Exception.php';
+require_once __DIR__ . '/lib/phpmailer/PHPMailer.php';
+require_once __DIR__ . '/lib/phpmailer/SMTP.php';
 
-// ─── CONFIGURAÇÕES ────────────────────────────────────────────────
-define('MAIL_TO',      'adesd.joinville@yahoo.com.br');
-define('MAIL_SUBJECT', '[Site] Trabalhe Conosco — Universo Down');
-// ──────────────────────────────────────────────────────────────────
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 header('Content-Type: application/json; charset=utf-8');
 
-// Só aceita POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     echo json_encode(['ok' => false, 'error' => 'Método não permitido.']);
     exit;
 }
 
-// Coleta e sanitiza campos
 $nome     = trim(strip_tags($_POST['nome']     ?? ''));
 $email    = trim(strip_tags($_POST['email']    ?? ''));
 $mensagem = trim(strip_tags($_POST['mensagem'] ?? ''));
 
-// Validação básica
 $erros = [];
-
-if ($nome === '') {
-    $erros[] = 'O campo Nome é obrigatório.';
-}
-
-if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    $erros[] = 'Informe um e-mail válido.';
-}
-
-if ($mensagem === '') {
-    $erros[] = 'O campo Mensagem é obrigatório.';
-}
+if ($nome === '')                                          $erros[] = 'O campo Nome é obrigatório.';
+if ($email === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) $erros[] = 'Informe um e-mail válido.';
+if ($mensagem === '')                                      $erros[] = 'O campo Mensagem é obrigatório.';
 
 if (!empty($erros)) {
     http_response_code(422);
@@ -47,26 +30,30 @@ if (!empty($erros)) {
     exit;
 }
 
-// Proteção básica contra header injection
-$nome     = str_replace(["\r", "\n"], '', $nome);
-$email    = str_replace(["\r", "\n"], '', $email);
+$nome  = str_replace(["\r", "\n"], '', $nome);
+$email = str_replace(["\r", "\n"], '', $email);
 
-// Monta o e-mail
-$corpo  = "Nome: {$nome}\n";
-$corpo .= "E-mail: {$email}\n\n";
-$corpo .= "Mensagem:\n{$mensagem}\n";
+try {
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = SMTP_USER;
+    $mail->Password   = SMTP_PASS;
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
+    $mail->CharSet    = 'UTF-8';
 
-$headers  = "From: Site Universo Down <adesd.joinville@yahoo.com.br>\r\n";
-$headers .= "Reply-To: {$nome} <{$email}>\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
-$headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $mail->setFrom(SMTP_USER, 'Site Universo Down');
+    $mail->addAddress(MAIL_TO);
+    $mail->addReplyTo($email, $nome);
 
-$enviado = mail(MAIL_TO, MAIL_SUBJECT, $corpo, $headers);
+    $mail->Subject = '[Site] Trabalhe Conosco — Universo Down';
+    $mail->Body    = "Nome: {$nome}\nE-mail: {$email}\n\nMensagem:\n{$mensagem}";
 
-if ($enviado) {
-    echo json_encode(['ok' => true, 'message' => 'Mensagem enviada com sucesso!']);
-} else {
+    $mail->send();
+    echo json_encode(['ok' => true]);
+} catch (Exception $e) {
     http_response_code(500);
-    echo json_encode(['ok' => false, 'error' => 'Falha ao enviar. Tente novamente mais tarde.']);
+    echo json_encode(['ok' => false, 'error' => 'Falha ao enviar.']);
 }
