@@ -1,3 +1,4 @@
+// quem-somos.js — Lightbox da galeria de espaços
 (function () {
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightboxImg');
@@ -25,11 +26,7 @@
   }
 
   lightboxClose.addEventListener('click', closeLightbox);
-
-  lightbox.addEventListener('click', function (e) {
-    if (e.target === lightbox) closeLightbox();
-  });
-
+  lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
   });

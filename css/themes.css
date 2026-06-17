@@ -1,59 +1,53 @@
+/* ============================================================
+   themes.css — Design Tokens (Universo Down)
+   Paleta extraída do logo: azul-marinho, turquesa, laranja, amarelo.
+   Nunca use cor "crua" nas páginas — sempre referencie estas variáveis.
+   ============================================================ */
+
 :root {
-  /* ====== Paleta (nova) ====== */
-  --brand-black: #000000;
-  --brand-yellow: #FFFF00; /* destaque / hover */
-  --brand-gray: #808080;   /* textos secundários */
-  --brand-blue-brand: #0081BA; /* Novo Azul (Nav e Footer) */
-  --brand-blue: #486BCB;   /* destaque secundário */
-  --brand-white: #FFFFFF;
+  /* ---- Marca ---- */
+  --navy:        #132355;  /* âncora: nav, faixas, títulos */
+  --navy-deep:   #0e1942;  /* rodapé */
+  --teal:        #03AEA3;  /* acento principal */
+  --teal-deep:   #008285;  /* texto de acento / labels */
+  --teal-soft:   #5fd6cd;  /* acento sobre fundo escuro */
+  --orange:      #EF8200;  /* CTA / ação */
+  --yellow:      #FBBE00;  /* destaque pontual */
+  --blue:        #0081BA;  /* acento secundário */
 
-  /* Cor Cinza para o fundo do Modo Escuro */
-  --brand-dark-gray: #1F1F1F;
+  /* ---- Texto ---- */
+  --ink:         #465065;  /* corpo de texto */
+  --muted:       #5b6478;  /* texto secundário */
+  --muted-2:     #8a91a0;  /* legendas / labels neutros */
 
-  /* ====== Raio ====== */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 10px;
+  /* ---- Superfícies ---- */
+  --bg:          #fffdf8;  /* fundo geral (off-white quente) */
+  --surface:     #ffffff;
+  --tint-teal:   #eef4f3;  /* faixa clara turquesa */
+  --tint-teal-2: #e7f6f4;  /* pill / badge claro */
+  --tint-yellow: #fff3d6;  /* badge laranja claro */
+  --line:        #eceeec;  /* borda de card */
+  --line-soft:   #f0ece1;  /* divisória sutil */
 
-  /* ====== Layout ====== */
-  --container: 1120px;
-  --gutter: clamp(1rem, 4vw, 2.25rem);
+  /* ---- Layout ---- */
+  --container:   1200px;
+  --gutter:      clamp(20px, 5vw, 56px);
 
-  /* ====== Tokens (Light) ====== */
-  --color-bg: var(--brand-white);
-  --color-surface: var(--brand-white);
-  --color-surface-2: rgba(0, 129, 186, 0.04);
+  /* ---- Raio ---- */
+  --radius-pill: 999px;
+  --radius-card: 24px;
+  --radius-md:   18px;
+  --radius-sm:   14px;
 
-  --color-text: var(--brand-black);
+  /* ---- Sombra ---- */
+  --shadow-card: 0 14px 34px rgba(19, 35, 85, .06);
+  --shadow-soft: 0 12px 30px rgba(19, 35, 85, .12);
+  --shadow-lift: 0 22px 44px rgba(19, 35, 85, .14);
+  --shadow-cta:  0 10px 24px rgba(239, 130, 0, .30);
 
-  --color-text-nav: var(--brand-white);
-  --color-text-nav-hover: var(--brand-yellow);
+  /* ---- Tipografia ---- */
+  --font-head: 'Baloo 2', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
 
-  --color-heading: var(--brand-blue-brand);
-
-  --color-muted-text: var(--brand-gray);
-  --color-border: rgba(0, 129, 186, 0.14);
-  --color-border-nav: rgba(255, 255, 255, 0.14);
-
-  --color-primary: var(--brand-blue-brand);
-  --color-primary-hover: var(--brand-yellow);
-  --color-secondary: var(--brand-blue-brand);
-  --color-link: var(--brand-blue-brand);
-
-  --shadow-sm: 0 10px 24px rgba(0, 0, 0, 0.12);
-  --shadow-md: 0 18px 48px rgba(0, 0, 0, 0.16);
-
-  /* Navbar e Topbar (Light Mode) */
-  --topbar-bg: #0076a8;
-  --topbar-text: rgba(255, 255, 255, 0.92);
-  --header-bg: rgba(255, 255, 255, 0.86);
-  --header-nav-bg: var(--brand-blue-brand);
-  --header-border: rgba(0, 129, 186, 0.14);
-
-  /* Footer Tokens (Light Mode) */
-  --footer-bg: var(--brand-blue-brand);
-  --footer-text: var(--brand-white);
-  --footer-hover: var(--brand-yellow);
-
-  --focus-ring: 0 0 0 3px rgba(255, 255, 0, 0.45);
+  --focus-ring: 0 0 0 3px rgba(3, 168, 156, .35);
 }
