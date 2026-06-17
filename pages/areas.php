@@ -1,142 +1,165 @@
 <?php
 $page_title       = 'Áreas de Atuação | Universo Down';
-$meta_description = 'Conheça as áreas de atuação da Universo Down: EP, AEE, SAE, Clube de Mães, Esporte, Cultura, Clube do Livro e Meio Ambiente.';
+$meta_description = 'Conheça as 15 áreas de atuação da Universo Down: Pedagogia EP, SAE, AEE, Arteterapia, Psicologia, Assistência Social, Terapia Ocupacional, Fonoaudiologia e mais.';
 $base_path        = '../';
 $current_page     = 'areas';
-$hero_image       = 'assets/img/hero/fundo_hero.jpg';
 
 include '../includes/header.php';
 ?>
 
-    <main>
-      <!-- Hero -->
-      <section class="page-hero"<?php echo hero_style(); ?>>
-        <div class="hero-content">
-          <h1>Áreas de Atuação</h1>
-          <p>Conheça as frentes de trabalho da Universo Down.</p>
-        </div>
-      </section>
+  <!-- Page hero -->
+  <section class="page-hero">
+    <span class="blob blob--teal" style="width:220px;height:220px;right:-50px;top:-50px;"></span>
+    <div class="container">
+      <span class="eyebrow eyebrow--onnavy">O que fazemos</span>
+      <h1>Áreas de atuação</h1>
+      <p>Quinze frentes de trabalho que acompanham cada pessoa em todas as fases da vida.</p>
+    </div>
+  </section>
 
-      <!-- Grid de Áreas -->
-      <section class="section">
-        <h2>Nossas Áreas</h2>
-
-        <div class="cards areas-grid">
-          <a href="#ep" class="card" aria-controls="areaDetail">
-            <h3>EP</h3>
-            <p>Estimulação Precoce</p>
-          </a>
-
-          <a href="#aee" class="card" aria-controls="areaDetail">
-            <h3>AEE</h3>
-            <p>Atendimento Educacional Especializado</p>
-          </a>
-
-          <a href="#sae" class="card" aria-controls="areaDetail">
-            <h3>SAE</h3>
-            <p>Serviço de Atendimento Especializado</p>
-          </a>
-
-          <a href="#clube-maes" class="card" aria-controls="areaDetail">
-            <h3>Clube de Mães</h3>
-            <p>Apoio e troca de experiências</p>
-          </a>
-
-          <a href="#esporte" class="card" aria-controls="areaDetail">
-            <h3>Esporte</h3>
-            <p>Atividades físicas inclusivas</p>
-          </a>
-
-          <a href="#cultura" class="card" aria-controls="areaDetail">
-            <h3>Cultura</h3>
-            <p>Expressão artística e cultural</p>
-          </a>
-
-          <a href="#clube-livros" class="card" aria-controls="areaDetail">
-            <h3>Clube do Livro</h3>
-            <p>Incentivo à leitura e comunicação</p>
-          </a>
-
-          <a href="#meio-ambiente-sustentabilidade" class="card" aria-controls="areaDetail">
-            <h3>Meio Ambiente e Sustentabilidade</h3>
-            <p>Conscientização ambiental e ações sustentáveis</p>
-          </a>
-        </div>
-
-        <div class="area-detail" id="areaDetail" role="region" aria-live="polite">
-          <h3 data-area-title>Selecione uma área</h3>
-          <div data-area-body>
-            <p>Escolha um card acima para ver a descrição completa da área.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Detalhes das Áreas -->
-      <div class="areas-details">
-        <section id="ep" class="section">
-          <h2>EP — Estimulação Precoce: desenvolvimento na primeira infância</h2>
-          <p>
-            A estimulação precoce acontece do nascimento até, aproximadamente, os 6 anos, fase em que o cérebro apresenta maior capacidade de aprendizagem. Para crianças com síndrome de Down, esse acompanhamento é fundamental para favorecer o desenvolvimento motor, cognitivo, da comunicação e das habilidades sociais, respeitando sempre o ritmo individual.
-          </p>
-          <p>No Universo Down, o trabalho na fase de estimulação precoce tem início a partir dos 3 meses de vida, com atendimento interdisciplinar e terapias que se complementam:</p>
-          <ul>
-            <li><strong>Fonoaudiologia:</strong> Estimula a comunicação, a linguagem e a musculatura orofacial, além de auxiliar nas funções de alimentação e respiração.</li>
-            <li><strong>Fisioterapia:</strong> Trabalha força muscular, equilíbrio e coordenação, auxiliando em marcos como sentar, engatinhar e andar, promovendo mais autonomia.</li>
-            <li><strong>Terapia Ocupacional:</strong> Desenvolve coordenação motora fina, integração sensorial e independência nas atividades da vida diária.</li>
-            <li><strong>Estimulação Cognitiva / Pedagogia:</strong> Estimula atenção, memória, raciocínio e habilidades pré-acadêmicas de forma lúdica, preparando para a vida escolar.</li>
-            <li><strong>Musicalização:</strong> A música favorece o desenvolvimento da linguagem, trabalha ritmo, coordenação, interação social e expressão emocional.</li>
-            <li><strong>Sala Multissensorial:</strong> O ambiente Snoezelen oferece experiências sensoriais controladas com luz, som, cores, texturas e aromas, contribuindo para relaxamento, organização sensorial e vínculo.</li>
-            <li><strong>Família e instituição:</strong> A participação da família é essencial. O Universo Down orienta e envolve os responsáveis, fortalecendo a continuidade dos estímulos em casa.</li>
-          </ul>
-          <p>Cada conquista é valorizada, pois todo avanço importa. A estimulação precoce é a base para uma trajetória de mais autonomia, inclusão e qualidade de vida.</p>
-        </section>
-
-        <section id="aee" class="section">
-          <h2>AEE — Atendimento Educacional Especializado</h2>
-          <p>O Núcleo AEE do Universo Down atende associados a partir dos 6 anos de idade até o final da Educação Básica, oferecendo acompanhamento pedagógico especializado, com foco no desenvolvimento das habilidades acadêmicas, funcionais, sociais e na promoção da autonomia.</p>
-          <p>O associado recebe acompanhamento pedagógico contínuo, aliado à combinação de outras terapias que contribuem para o seu desenvolvimento global nesta fase da vida.</p>
-          <p>A combinação de terapias é personalizada e não segue um padrão fixo, pois cada associado apresenta características, desafios e talentos únicos. O plano de atendimento pode incluir: fonoaudiologia, terapia ocupacional, psicopedagogia, psicologia, estimulação cognitiva, atividades socioeducativas, entre outras intervenções.</p>
-          <p>O trabalho do Núcleo AEE também busca fortalecer a articulação com a escola regular, a família e os demais profissionais envolvidos, promovendo alinhamento de estratégias e acompanhamento dos avanços.</p>
-          <p>Mais do que atender conteúdos escolares, o Núcleo AEE tem como missão potencializar capacidades, estimular a autonomia e preparar o associado para uma participação mais ativa e segura na sociedade.</p>
-        </section>
-
-        <section id="sae" class="section">
-          <h2>SAE — Serviço de Atendimento Especializado</h2>
-          <p>O Núcleo SAE do Universo Down é voltado para associados a partir dos 17 anos, que estão em transição para a vida adulta ou já vivenciam essa etapa. Seu principal objetivo é favorecer a autonomia, a participação social, o desenvolvimento funcional e a construção de um projeto de vida ativo e significativo.</p>
-          <p>Cada associado passa por uma avaliação individual com a equipe técnica, que identifica seu nível de independência, interesses, potencialidades e desafios. A partir dessa escuta, é construído um plano de desenvolvimento personalizado.</p>
-          <p>As atividades e acompanhamentos podem incluir oficinas de autonomia, habilidades sociais, práticas de vida diária, projetos ocupacionais, estimulação cognitiva funcional, acompanhamento terapêutico e ações de inclusão comunitária.</p>
-          <p>O Núcleo SAE valoriza o protagonismo do associado, estimulando sua participação ativa nas escolhas e na construção de sua identidade adulta. A família atua como parceira nesse processo.</p>
-          <p>Mais do que atender, o SAE tem como propósito promover pertencimento, dignidade, independência possível e qualidade de vida.</p>
-        </section>
-
-        <section id="clube-maes" class="section">
-          <h2>Clube de Mães</h2>
-          <p>O Clube de Mães é um espaço de acolhimento, troca e fortalecimento de vínculos familiares. As mães e responsáveis participam de atividades como artesanato, costura criativa, costura sustentável com reaproveitamento de materiais, pintura e outras técnicas manuais. Além do cuidado emocional, o projeto incentiva o empreendedorismo comunitário, com a produção e comercialização de artesanatos, gerando renda e autonomia.</p>
-        </section>
-
-        <section id="esporte" class="section">
-          <h2>Esporte</h2>
-          <p>O esporte é uma ferramenta poderosa de inclusão, saúde e autoestima. Nosso programa esportivo oferece diversas modalidades, como ginástica, ginástica rítmica, atletismo e ensaios de dança para apresentações. Atualmente, contamos com 8 atletas que participam de competições regionais, estaduais e nacionais, representando o Universo Down, Joinville e o estado de Santa Catarina com orgulho, dedicação e superação.</p>
-        </section>
-
-        <section id="cultura" class="section">
-          <h2>Cultura</h2>
-          <p>Desenvolvemos diversas atividades culturais, como arteterapia, artesanato, rodas de leitura, artes visuais e dança, promovendo expressão, autoestima e pertencimento.</p>
-          <p>Nosso grupo de dança, formado por 14 bailarinos com Síndrome de Down, participa de diversos eventos culturais em Santa Catarina, com destaque para apresentações na Semana da Dança e no Festival Nacional de Dança de Joinville.</p>
-        </section>
-
-        <section id="clube-livros" class="section">
-          <h2>Clube do Livro</h2>
-          <p>O Clube do Livro é um espaço de incentivo à leitura, ao contato com a literatura e ao fortalecimento da comunicação.</p>
-          <p>Por meio de atividades lúdicas e educativas, estimulamos a expressão, o diálogo e o desenvolvimento cognitivo dos associados.</p>
-        </section>
-
-        <section id="meio-ambiente-sustentabilidade" class="section">
-          <h2>Meio Ambiente e Sustentabilidade</h2>
-          <p>Promovemos a conscientização ambiental entre associados e familiares, incentivando uma visão sustentável e responsável.</p>
-          <p>Realizamos projetos de artesanato com materiais recicláveis e ações educativas, como atividades ambientais itinerantes e visitas à praia, com foco na proteção da fauna.</p>
-        </section>
+  <!-- Atalhos -->
+  <section class="band band--tight">
+    <div class="container">
+      <div class="jump-grid">
+        <a class="jump-card" href="#ep"><div class="badge badge--navy">EP</div><b>Pedagogia EP</b></a>
+        <a class="jump-card" href="#sae"><div class="badge badge--orange">SAE</div><b>Pedagogia SAE</b></a>
+        <a class="jump-card" href="#aee"><div class="badge badge--teal">AEE</div><b>Pedagogia AEE</b></a>
+        <a class="jump-card" href="#arteterapia"><div class="badge badge--blue"><span class="material-symbols-outlined">palette</span></div><b>Arteterapia</b></a>
+        <a class="jump-card" href="#psicologia"><div class="badge badge--soft-orange"><span class="material-symbols-outlined">psychology</span></div><b>Psicologia</b></a>
+        <a class="jump-card" href="#assistencia-social"><div class="badge badge--tealdeep"><span class="material-symbols-outlined">groups</span></div><b>Assist. Social</b></a>
+        <a class="jump-card" href="#to"><div class="badge badge--teal"><span class="material-symbols-outlined">accessibility_new</span></div><b>Ter. Ocupacional</b></a>
+        <a class="jump-card" href="#ed-fisica"><div class="badge badge--yellow"><span class="material-symbols-outlined">sports_soccer</span></div><b>Educ. Física</b></a>
+        <a class="jump-card" href="#fono"><div class="badge badge--navy"><span class="material-symbols-outlined">record_voice_over</span></div><b>Fonoaudiologia</b></a>
+        <a class="jump-card" href="#fisio"><div class="badge badge--orange"><span class="material-symbols-outlined">self_improvement</span></div><b>Fisioterapia</b></a>
+        <a class="jump-card" href="#informatica"><div class="badge badge--blue"><span class="material-symbols-outlined">computer</span></div><b>Informática</b></a>
+        <a class="jump-card" href="#snoezelen"><div class="badge badge--tealdeep"><span class="material-symbols-outlined">lightbulb</span></div><b>Snoezelen</b></a>
+        <a class="jump-card" href="#musica"><div class="badge badge--blue"><span class="material-symbols-outlined">music_note</span></div><b>Música</b></a>
+        <a class="jump-card" href="#psicopedagogia"><div class="badge badge--soft-orange"><span class="material-symbols-outlined">school</span></div><b>Psicopedagogia</b></a>
+        <a class="jump-card" href="#avds"><div class="badge badge--navy"><span class="material-symbols-outlined">home</span></div><b>AVD's</b></a>
       </div>
-    </main>
+    </div>
+  </section>
+
+  <!-- EP -->
+  <section class="band band--tight">
+    <div class="container area-detail" id="ep">
+      <aside class="area-aside">
+        <div class="badge badge--navy">EP</div>
+        <h2>Pedagogia EP</h2>
+        <p class="age">Dos 3 meses até 6 anos</p>
+      </aside>
+      <div class="area-body">
+        <p>A estimulação precoce acontece do nascimento até, aproximadamente, os 6 anos — fase em que o cérebro apresenta maior capacidade de aprendizagem. Para crianças com Síndrome de Down, esse acompanhamento favorece o desenvolvimento motor, cognitivo, da comunicação e das habilidades sociais, sempre respeitando o ritmo individual.</p>
+        <p>No Universo Down, o trabalho tem início a partir dos 3 meses de vida, com atendimento interdisciplinar e terapias que se complementam:</p>
+        <div class="area-list">
+          <div class="item"><b>Fonoaudiologia</b><span> — comunicação, linguagem e musculatura orofacial, além de alimentação e respiração.</span></div>
+          <div class="item"><b>Fisioterapia</b><span> — força, equilíbrio e coordenação, auxiliando a sentar, engatinhar e andar.</span></div>
+          <div class="item"><b>Terapia Ocupacional</b><span> — coordenação motora fina, integração sensorial e independência no dia a dia.</span></div>
+          <div class="item"><b>Pedagogia / Estimulação Cognitiva</b><span> — atenção, memória, raciocínio e habilidades pré-acadêmicas de forma lúdica.</span></div>
+          <div class="item"><b>Musicalização</b><span> — linguagem, ritmo, coordenação, interação social e expressão emocional.</span></div>
+          <div class="item"><b>Sala Multissensorial</b><span> — ambiente Snoezelen com luz, som, texturas e aromas para organização sensorial e vínculo.</span></div>
+        </div>
+        <p style="margin-top:18px;">A participação da família é essencial: orientamos e envolvemos os responsáveis para dar continuidade aos estímulos em casa. Cada conquista é valorizada, porque todo avanço importa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AEE -->
+  <section class="band band--tight" style="padding-top:0;">
+    <div class="container area-detail" id="aee">
+      <aside class="area-aside">
+        <div class="badge badge--teal" style="font-size:15px;">AEE</div>
+        <h2>Pedagogia AEE</h2>
+        <p class="age">A partir dos 6 anos</p>
+      </aside>
+      <div class="area-body">
+        <p>O Núcleo AEE atende associados a partir dos 6 anos até o final da Educação Básica, com acompanhamento pedagógico especializado focado em habilidades acadêmicas, funcionais, sociais e na promoção da autonomia.</p>
+        <p>A combinação de terapias é personalizada — cada associado tem características, desafios e talentos únicos. O plano pode incluir fonoaudiologia, terapia ocupacional, psicopedagogia, psicologia, estimulação cognitiva e atividades socioeducativas.</p>
+        <p>Também fortalecemos a articulação com a escola regular e a família, alinhando estratégias. Mais do que conteúdos escolares, o objetivo é potencializar capacidades e preparar para uma participação ativa e segura na sociedade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAE -->
+  <section class="band band--tight" style="padding-top:0;">
+    <div class="container area-detail" id="sae">
+      <aside class="area-aside">
+        <div class="badge badge--orange" style="font-size:15px;">SAE</div>
+        <h2>Pedagogia SAE</h2>
+        <p class="age">A partir dos 18 anos</p>
+      </aside>
+      <div class="area-body">
+        <p>O Núcleo SAE é voltado para associados a partir dos 18 anos, em transição para a vida adulta. Seu objetivo é favorecer a autonomia, a participação social, o desenvolvimento funcional e a construção de um projeto de vida ativo e significativo.</p>
+        <p>Cada associado passa por avaliação individual com a equipe técnica, que identifica seu nível de independência, interesses e potencialidades. A partir dessa escuta, construímos um plano de desenvolvimento personalizado.</p>
+        <p>As atividades incluem oficinas de autonomia, habilidades sociais, práticas de vida diária, projetos ocupacionais e ações de inclusão comunitária — sempre valorizando o protagonismo, com a família como parceira.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demais áreas -->
+  <section class="band band--tight" style="padding-top:0;">
+    <div class="container">
+      <div class="area-cards">
+        <div class="card" id="arteterapia">
+          <div class="head"><div class="badge badge--blue"><span class="material-symbols-outlined">palette</span></div><h3>Arteterapia</h3></div>
+          <p style="color:var(--muted);">Arte como instrumento terapêutico que favorece a expressão emocional, a criatividade e o autoconhecimento dos associados. Por meio de diferentes linguagens artísticas, trabalhamos habilidades comunicativas, afetivas e cognitivas de forma lúdica e significativa.</p>
+        </div>
+        <div class="card" id="psicologia">
+          <div class="head"><div class="badge badge--soft-orange"><span class="material-symbols-outlined">psychology</span></div><h3>Psicologia</h3></div>
+          <p style="color:var(--muted);">Acompanhamento psicológico individual que apoia o bem-estar emocional, o desenvolvimento pessoal e o fortalecimento das relações familiares. Também oferecemos escuta e orientação às famílias, reconhecendo seu papel central no processo de cada associado.</p>
+        </div>
+        <div class="card" id="assistencia-social">
+          <div class="head"><div class="badge badge--tealdeep"><span class="material-symbols-outlined">groups</span></div><h3>Assistência Social</h3></div>
+          <p style="color:var(--muted);">Orientação às famílias no acesso a direitos, benefícios sociais e serviços da rede de proteção, fortalecendo a autonomia e a cidadania. Atuamos de forma integrada com a equipe técnica para garantir que nenhuma família fique sem o suporte de que precisa.</p>
+        </div>
+        <div class="card" id="to">
+          <div class="head"><div class="badge badge--teal"><span class="material-symbols-outlined">accessibility_new</span></div><h3>Terapia Ocupacional</h3></div>
+          <p style="color:var(--muted);">Desenvolve a coordenação motora fina, a integração sensorial e a independência nas atividades do cotidiano, potencializando a autonomia. O atendimento é individualizado e acompanha cada fase do desenvolvimento — da infância à vida adulta.</p>
+        </div>
+        <div class="card" id="ed-fisica">
+          <div class="head"><div class="badge badge--yellow"><span class="material-symbols-outlined">sports_soccer</span></div><h3>Educação Física</h3></div>
+          <p style="color:var(--muted);">Atividades físicas e esportivas que promovem saúde, coordenação motora, autoestima e convivência social. O movimento é um aliado poderoso no desenvolvimento global — e aqui ele é praticado com alegria, respeito e propósito.</p>
+        </div>
+        <div class="card" id="fono">
+          <div class="head"><div class="badge badge--navy"><span class="material-symbols-outlined">record_voice_over</span></div><h3>Fonoaudiologia</h3></div>
+          <p style="color:var(--muted);">Atendimento focado em comunicação, linguagem oral e escrita, musculatura orofacial, alimentação e respiração — base essencial para o desenvolvimento global. Trabalhamos desde os primeiros meses de vida até a fase adulta, sempre de forma integrada com as demais áreas.</p>
+        </div>
+        <div class="card" id="fisio">
+          <div class="head"><div class="badge badge--orange"><span class="material-symbols-outlined">self_improvement</span></div><h3>Fisioterapia</h3></div>
+          <p style="color:var(--muted);">Trabalha força muscular, equilíbrio e coordenação, apoiando o desenvolvimento motor e a mobilidade ao longo de toda a vida. O atendimento é individualizado e adaptado às necessidades de cada fase — do bebê que aprende a sentar ao adulto que busca mais independência.</p>
+        </div>
+        <div class="card" id="informatica">
+          <div class="head"><div class="badge badge--blue"><span class="material-symbols-outlined">computer</span></div><h3>Informática</h3></div>
+          <p style="color:var(--muted);">Inclusão digital com aulas práticas que desenvolvem habilidades tecnológicas, autonomia e preparo para o mundo contemporâneo. Os associados aprendem a usar computadores e ferramentas digitais de forma funcional e significativa para o dia a dia.</p>
+        </div>
+        <div class="card" id="snoezelen">
+          <div class="head"><div class="badge badge--tealdeep"><span class="material-symbols-outlined">lightbulb</span></div><h3>Snoezelen</h3></div>
+          <p style="color:var(--muted);">Ambiente multissensorial com estímulos controlados de luz, som, tato e aroma para organização sensorial, relaxamento e fortalecimento de vínculos. A sala Snoezelen é um espaço de calma e exploração, especialmente indicado para momentos de regulação emocional e estímulo sensorial.</p>
+        </div>
+        <div class="card" id="musica">
+          <div class="head"><div class="badge badge--blue"><span class="material-symbols-outlined">music_note</span></div><h3>Música</h3></div>
+          <p style="color:var(--muted);">Aulas e atividades musicais que desenvolvem ritmo, expressão, linguagem e interação social. A música abre caminhos de comunicação e identidade — e no Universo Down ela pulsa em diferentes formatos, dos instrumentos à voz, do individual ao coletivo.</p>
+        </div>
+        <div class="card" id="psicopedagogia">
+          <div class="head"><div class="badge badge--soft-orange"><span class="material-symbols-outlined">school</span></div><h3>Psicopedagogia</h3></div>
+          <p style="color:var(--muted);">Intervenção especializada nas dificuldades de aprendizagem, com estratégias individualizadas para o desenvolvimento cognitivo e escolar. Trabalhamos em parceria com a família e a escola para construir pontes entre o potencial de cada associado e suas conquistas acadêmicas.</p>
+        </div>
+        <div class="card" id="avds">
+          <div class="head"><div class="badge badge--navy"><span class="material-symbols-outlined">home</span></div><h3>AVD's</h3></div>
+          <p style="color:var(--muted);">Atividades de Vida Diária com foco em habilidades práticas — higiene, alimentação, organização e mobilidade — para maior independência no cotidiano. Cada conquista nessa área representa um passo concreto em direção à autonomia e à participação ativa na vida social.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="band band--navy cta-band">
+    <span class="blob blob--teal" style="width:180px;height:180px;right:-40px;top:-40px;"></span>
+    <div class="container">
+      <h2>Quer saber se podemos ajudar sua família?</h2>
+      <p style="font-size:17px;">Fale com a gente — vamos te orientar sobre o melhor caminho.</p>
+      <a class="btn btn--orange btn--lg" href="<?php echo $base_path; ?>pages/contato.php">Fale conosco</a>
+    </div>
+  </section>
 
 <?php include '../includes/footer.php'; ?>

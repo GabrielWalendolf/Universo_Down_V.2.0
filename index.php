@@ -1,93 +1,197 @@
 <?php
 $page_title       = 'Universo Down | Inclusão, Autonomia e Desenvolvimento';
-$meta_description = 'Universo Down promove inclusão, autonomia e desenvolvimento para pessoas com Síndrome de Down em Joinville/SC. Conheça nossas áreas de atuação.';
+$meta_description = 'A Universo Down promove inclusão, autonomia e desenvolvimento para crianças e jovens com Síndrome de Down em Joinville/SC. Conheça nossas áreas e apoie.';
 $base_path        = '';
 $current_page     = 'home';
-$hero_image       = 'assets/img/hero/fundo_hero.jpg';
 
 include 'includes/header.php';
 ?>
 
-    <!-- Hero -->
-    <section class="hero"<?php echo hero_style(); ?>>
-      <div class="hero-content">
-        <h1>Inclusão, Autonomia e Respeito</h1>
-        <p>Construindo oportunidades para pessoas com Síndrome de Down.</p>
-        <a href="<?php echo $base_path; ?>pages/quem-somos.php" class="btn-primary">
-          Conheça a Universo Down
+  <!-- Hero -->
+  <section class="hero">
+    <span class="blob blob--teal" style="width:300px;height:300px;right:-90px;top:-90px;"></span>
+    <span class="blob blob--yellow" style="width:140px;height:140px;left:42%;bottom:-60px;"></span>
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Associação de síndrome de Down de Joinville</span>
+        <h1>Aqui somos todos estrelas</h1>
+        <p class="hero-lead">Oferecemos atendimento especializado a pessoas com a síndrome, promovendo a inclusão e contribuindo para um mundo mais igualitário.</p>
+        <div class="hero-actions">
+          <a class="btn btn--orange btn--lg" href="pages/contato.php#doar">Quero ajudar</a>
+          <a class="btn btn--navy btn--lg" href="pages/areas.php">Conheça as áreas</a>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <div class="photo">
+          <img src="assets/img/espacos/sala_artes.jpg" alt="Sala de artes da Universo Down" loading="lazy" />
+        </div>
+        <div class="hero-badge"><b>+200</b><span>famílias acolhidas</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missão -->
+  <section class="band band--navy mission">
+    <span class="blob blob--teal-2" style="width:54px;height:54px;left:46px;top:32px;"></span>
+    <span class="blob blob--teal" style="width:84px;height:84px;right:64px;bottom:26px;"></span>
+    <div class="container">
+      <span class="eyebrow eyebrow--onnavy">Nossa missão</span>
+      <p>Promover inclusão, desenvolvimento e autonomia de pessoas com Síndrome de Down, fortalecendo famílias e construindo uma sociedade mais justa.</p>
+    </div>
+  </section>
+
+  <!-- Impacto -->
+  <section class="band band--tight">
+    <div class="container grid grid-4">
+      <div class="stat"><b>+30</b><span>anos de atuação</span></div>
+      <div class="stat"><b>+200</b><span>famílias acompanhadas</span></div>
+      <div class="stat"><b>15</b><span>áreas de atendimento</span></div>
+      <div class="stat"><b>100%</b><span>gratuito às famílias</span></div>
+    </div>
+  </section>
+
+  <!-- Áreas -->
+  <section class="band band--tight">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">O que fazemos</span>
+        <h2>Nossas áreas de atuação</h2>
+      </div>
+      <div class="grid grid-3">
+        <a class="card card-hover" href="pages/areas.php#ep" style="text-decoration:none;">
+          <div class="badge badge--navy">EP</div>
+          <h3>Pedagogia EP</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Acompanhamento pedagógico especializado dos 3 meses até os 6 anos, fase decisiva para o desenvolvimento.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#sae" style="text-decoration:none;">
+          <div class="badge badge--orange">SAE</div>
+          <h3>Pedagogia SAE</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Serviço de atendimento especializado para adultos a partir dos 18 anos, focado em autonomia e inclusão.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#aee" style="text-decoration:none;">
+          <div class="badge badge--teal">AEE</div>
+          <h3>Pedagogia AEE</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Apoio pedagógico especializado que complementa a vida escolar de cada criança e adolescente.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#arteterapia" style="text-decoration:none;">
+          <div class="badge badge--blue"><span class="material-symbols-outlined">palette</span></div>
+          <h3>Arteterapia</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Arte como ferramenta terapêutica para expressão emocional, criatividade e desenvolvimento.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#psicologia" style="text-decoration:none;">
+          <div class="badge badge--soft-orange"><span class="material-symbols-outlined">psychology</span></div>
+          <h3>Psicologia</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Acompanhamento psicológico individual e suporte emocional para associados e famílias.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#assistencia-social" style="text-decoration:none;">
+          <div class="badge badge--tealdeep"><span class="material-symbols-outlined">groups</span></div>
+          <h3>Assistência Social</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Orientação e acesso a direitos, benefícios e serviços sociais para as famílias atendidas.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#to" style="text-decoration:none;">
+          <div class="badge badge--teal"><span class="material-symbols-outlined">accessibility_new</span></div>
+          <h3>Terapia Ocupacional</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Desenvolvimento da independência nas atividades do dia a dia e integração sensorial.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#ed-fisica" style="text-decoration:none;">
+          <div class="badge badge--yellow"><span class="material-symbols-outlined">sports_soccer</span></div>
+          <h3>Educação Física</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Atividades físicas que promovem saúde, coordenação, autoestima e convivência.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#fono" style="text-decoration:none;">
+          <div class="badge badge--navy"><span class="material-symbols-outlined">record_voice_over</span></div>
+          <h3>Fonoaudiologia</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Comunicação, linguagem e musculatura orofacial — base para o desenvolvimento global.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#fisio" style="text-decoration:none;">
+          <div class="badge badge--orange"><span class="material-symbols-outlined">self_improvement</span></div>
+          <h3>Fisioterapia</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Força, equilíbrio e coordenação motora para uma vida com mais mobilidade e independência.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#informatica" style="text-decoration:none;">
+          <div class="badge badge--blue"><span class="material-symbols-outlined">computer</span></div>
+          <h3>Informática</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Inclusão digital e desenvolvimento de habilidades tecnológicas para o mundo contemporâneo.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#snoezelen" style="text-decoration:none;">
+          <div class="badge badge--tealdeep"><span class="material-symbols-outlined">lightbulb</span></div>
+          <h3>Snoezelen</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Sala multissensorial com estímulos de luz, som e tato para organização sensorial e bem-estar.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#musica" style="text-decoration:none;">
+          <div class="badge badge--blue"><span class="material-symbols-outlined">music_note</span></div>
+          <h3>Música</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Ritmo, expressão e vínculo — a música como caminho de comunicação e identidade.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#psicopedagogia" style="text-decoration:none;">
+          <div class="badge badge--soft-orange"><span class="material-symbols-outlined">school</span></div>
+          <h3>Psicopedagogia</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Apoio especializado nas dificuldades de aprendizagem e no desenvolvimento cognitivo.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#avds" style="text-decoration:none;">
+          <div class="badge badge--navy"><span class="material-symbols-outlined">home</span></div>
+          <h3>AVD's</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Atividades de Vida Diária — habilidades práticas para maior autonomia e independência.</p>
         </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Missão -->
-    <section class="section">
-      <h2>Nossa Missão</h2>
-      <p>
-        Promover inclusão, desenvolvimento e autonomia de pessoas com Síndrome
-        de Down, fortalecendo famílias e construindo uma sociedade mais justa.
-      </p>
-    </section>
+  <!-- Espaços -->
+  <section class="band band--tint">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow eyebrow--onwhite">Onde acontece</span>
+        <h2>Espaços feitos para acolher</h2>
+      </div>
+      <div class="grid grid-3">
+        <figure class="photo" style="height:240px;"><img src="assets/img/espacos/sala_musica.jpeg" alt="Sala de música" loading="lazy" /><figcaption class="tag">Sala de música</figcaption></figure>
+        <figure class="photo" style="height:240px;"><img src="assets/img/espacos/sala_multisensorial.jpeg" alt="Sala multissensorial" loading="lazy" /><figcaption class="tag">Multissensorial</figcaption></figure>
+        <figure class="photo" style="height:240px;"><img src="assets/img/espacos/playground.jpeg" alt="Playground" loading="lazy" /><figcaption class="tag">Playground</figcaption></figure>
+      </div>
+      <p style="text-align:center;margin-top:28px;font-size:15px;color:var(--muted);">Mantida com recursos do FMAS, FIA e FCEE.</p>
+      <div style="display:flex;justify-content:center;gap:24px;margin-top:20px;flex-wrap:wrap;">
+        <div style="width:120px;height:60px;background:var(--tint);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--muted);">FMAS</div>
+        <div style="width:120px;height:60px;background:var(--tint);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--muted);">FIA</div>
+        <div style="width:120px;height:60px;background:var(--tint);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--muted);">FCEE</div>
+      </div>
+    </div>
+  </section>
 
-    <!-- ODS -->
-    <section class="section">
-      <h2>Compromisso com os ODS</h2>
-      <p>Atuamos em alinhamento com os Objetivos de Desenvolvimento Sustentável da ONU.</p>
-      <div class="cards">
-        <div class="card ods-card">
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_3.png"  alt="ODS 3 — Saúde e Bem-Estar" loading="lazy" />
-          <h3>ODS 3</h3>
-          <p>Saúde e Bem-Estar</p>
-        </div>
-        <div class="card ods-card">
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_4.jpg"  alt="ODS 4 — Educação de Qualidade" loading="lazy" />
-          <h3>ODS 4</h3>
-          <p>Educação de Qualidade</p>
-        </div>
-        <div class="card ods-card">
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_8.png"  alt="ODS 8 — Trabalho Decente e Crescimento Econômico" loading="lazy" />
-          <h3>ODS 8</h3>
-          <p>Trabalho Decente e Crescimento Econômico</p>
-        </div>
-        <div class="card ods-card">
-          <img src="<?php echo $base_path; ?>assets/img/ods/ods_11.png" alt="ODS 11 — Cidades e Comunidades Sustentáveis" loading="lazy" />
-          <h3>ODS 11</h3>
-          <p>Cidades e Comunidades Sustentáveis</p>
+  <!-- Doação -->
+  <section class="band band--navy">
+    <span class="blob blob--teal" style="width:220px;height:220px;right:-50px;top:-50px;"></span>
+    <div class="container donate-grid">
+      <div>
+        <span class="eyebrow eyebrow--onnavy is-yellow">Faça parte</span>
+        <h2 style="margin-bottom:16px;">Sua doação transforma histórias.</h2>
+        <p style="font-size:17px;max-width:480px;margin-bottom:26px;">Com qualquer valor você ajuda a manter atendimentos 100% gratuitos para dezenas de famílias. Doe pelo Pix, uma vez ou todo mês.</p>
+        <div class="hero-actions">
+          <a class="btn btn--orange btn--lg" href="pages/contato.php#doar">Doar com Pix</a>
+          <a class="btn btn--ghost btn--lg" href="pages/contato.php">Fale conosco</a>
         </div>
       </div>
-    </section>
-
-    <!-- Áreas -->
-    <section class="section">
-      <h2>Áreas de Atuação</h2>
-      <div class="cards areas">
-        <a href="<?php echo $base_path; ?>pages/areas.php#ep"                             class="card">EP</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#aee"                            class="card">AEE</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#sae"                            class="card">SAE</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#clube-maes"                     class="card">Clube de Mães</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#esporte"                        class="card">Esporte</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#cultura"                        class="card">Cultura</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#clube-livros"                   class="card">Clube do Livro</a>
-        <a href="<?php echo $base_path; ?>pages/areas.php#meio-ambiente-sustentabilidade" class="card">Meio Ambiente &amp; Sustentabilidade</a>
+      <div class="donate-card">
+        <img class="qr-img" src="assets/img/qrcode/QRcode_associacao.jpeg" alt="QR Code para doação via Pix" />
+        <div style="font-weight:800;font-size:15px;margin-bottom:4px;">Pix · CNPJ</div>
+        <div style="font-size:13.5px;font-weight:600;color:var(--muted);">81.144.099/0001-05</div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Parceiros -->
-    <section class="section">
-      <h2>Parceiros</h2>
-      <div class="partners-carousel" aria-label="Carrossel de parceiros">
-        <div class="partners-track">
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/bosch.png"              alt="Bosch"               loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/ciser.png"              alt="Ciser"               loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/docol.png"              alt="Docol"               loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/doterra.png"            alt="doTERRA"             loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/fibrasca.png"           alt="Fibrasca"            loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/krona.png"              alt="Krona"               loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/lasa-outdoor.png"       alt="Lasa Outdoor"        loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/magica-comunicacao.png" alt="Mágica Comunicação"  loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/tigre.png"              alt="Tigre"               loading="lazy" draggable="false" /></div>
-          <div class="partner-item"><img src="assets/img/empresas_parceiras/tupy.png"               alt="Tupy"                loading="lazy" draggable="false" /></div>
-        </div>
+  <!-- Parceiros -->
+  <section class="band band--tight partners">
+    <div class="container">
+      <p class="partners-label">Empresas que apoiam a Universo Down</p>
+      <div class="partners-row">
+        <img src="assets/img/empresas_parceiras/bosch.png" alt="Bosch" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/ciser.png" alt="Ciser" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/docol.png" alt="Docol" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/krona.png" alt="Krona" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/tigre.png" alt="Tigre" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/tupy.png" alt="Tupy" loading="lazy" />
       </div>
-    </section>
+    </div>
+  </section>
 
 <?php include 'includes/footer.php'; ?>
