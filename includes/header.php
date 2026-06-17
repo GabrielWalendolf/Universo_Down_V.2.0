@@ -44,7 +44,7 @@ function nav_active(string $slug, string $current): string {
     <header class="header" role="banner">
       <div class="container header-inner">
         <a href="<?php echo $base_path; ?>index.php" aria-label="Página inicial">
-          <img class="logo" src="<?php echo $base_path; ?>assets/img/universo-down-logo.svg" alt="Universo Down" width="120" height="58" />
+          <img class="logo" src="<?php echo $base_path; ?>assets/img/universo-down-logo.png" alt="Universo Down" width="100" height="400" />
         </a>
         <nav class="nav" aria-label="Navegação principal">
           <button id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">☰</button>
