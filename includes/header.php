@@ -50,7 +50,7 @@ function nav_active(string $slug, string $current): string {
           <button id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">☰</button>
           <ul id="navMenu" role="list">
             <li><a class="<?php echo trim(nav_active('home', $current_page)); ?>"          href="<?php echo $base_path; ?>index.php">Início</a></li>
-            <li><a class="<?php echo trim(nav_active('quem-somos', $current_page)); ?>"    href="<?php echo $base_path; ?>pages/quem-somos.php">A Associação</a></li>
+            <li><a class="<?php echo trim(nav_active('quem-somos', $current_page)); ?>"    href="<?php echo $base_path; ?>pages/quem-somos.php">Associação</a></li>
             <li><a class="<?php echo trim(nav_active('areas', $current_page)); ?>"         href="<?php echo $base_path; ?>pages/areas.php">Áreas</a></li>
             <li><a class="<?php echo trim(nav_active('transparencia', $current_page)); ?>" href="<?php echo $base_path; ?>pages/transparencia.php">Transparência</a></li>
             <li><a class="<?php echo trim(nav_active('contato', $current_page)); ?>"       href="<?php echo $base_path; ?>pages/contato.php">Contato</a></li>
