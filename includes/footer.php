@@ -16,7 +16,7 @@ $base_path = isset($base_path) ? $base_path : '';
           <div>
             <h4>Institucional</h4>
             <ul role="list">
-              <li><a href="<?php echo $base_path; ?>pages/quem-somos.php">A Associação</a></li>
+              <li><a href="<?php echo $base_path; ?>pages/quem-somos.php">Associação</a></li>
               <li><a href="<?php echo $base_path; ?>pages/transparencia.php">Transparência</a></li>
               <li><a href="<?php echo $base_path; ?>pages/areas.php">Áreas</a></li>
             </ul>
@@ -32,7 +32,7 @@ $base_path = isset($base_path) ? $base_path : '';
           <div>
             <h4>Onde estamos</h4>
             <ul role="list">
-              <li>Rua Ministro Calógeras, 758 — Centro, Joinville/SC</li>
+              <li>Rua Ministro Calógeras, 758, Centro, Joinville/SC</li>
               <li>Seg. a sex.: 8h–12h e 13h–17h</li>
               <li>
                 <a href="https://www.instagram.com/universodown/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fi fi-brands-instagram"></i></a>
