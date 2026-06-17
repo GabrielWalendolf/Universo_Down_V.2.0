@@ -54,7 +54,7 @@
 .lightbox-close { position: absolute; top: 24px; right: 30px; background: none; border: none; color: #fff; font-size: 38px; line-height: 1; cursor: pointer; }
 
 /* ---------- Áreas: grade de atalhos ---------- */
-.jump-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.jump-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .jump-card { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 24px; text-decoration: none; transition: transform .25s ease, box-shadow .25s ease; }
 .jump-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
 .jump-card .badge { margin-bottom: 14px; width: 46px; height: 46px; border-radius: 14px; font-size: 15px; }
