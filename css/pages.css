@@ -74,7 +74,7 @@
 .area-list .item b { color: var(--navy); }
 .area-list .item span { color: var(--ink); }
 
-.area-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+.area-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .area-cards .head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
 .area-cards .head .badge { margin: 0; width: 48px; height: 48px; border-radius: 14px; }
 .area-cards .head h3 { font-size: 22px; }
