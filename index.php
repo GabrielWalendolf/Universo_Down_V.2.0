@@ -23,7 +23,7 @@ include 'includes/header.php';
       </div>
       <div class="hero-figure">
         <div class="photo">
-          <img src="assets/img/espacos/sala_artes.jpg" alt="Sala de artes da Universo Down" loading="lazy" />
+          <img src="assets/img/espacos/artes.jpg" alt="Sala de artes da Universo Down" loading="lazy" />
         </div>
         <div class="hero-badge"><b>+200</b><span>famílias acolhidas</span></div>
       </div>
