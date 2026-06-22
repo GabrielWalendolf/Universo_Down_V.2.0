@@ -27,7 +27,7 @@ include '../includes/header.php';
         <p>Ao longo do tempo, ampliamos nossas ações, desenvolvendo projetos educacionais, sociais, culturais e esportivos, sempre com foco na autonomia e na participação ativa na sociedade.</p>
       </div>
       <div class="photo">
-        <img src="<?php echo $base_path; ?>assets/img/espacos/sala_EP.jpg" alt="Sala de estimulação precoce" loading="lazy" />
+        <img src="<?php echo $base_path; ?>assets/img/espacos/EP.jpg" alt="Sala de estimulação precoce" loading="lazy" />
       </div>
     </div>
   </section>
@@ -100,20 +100,21 @@ include '../includes/header.php';
         <h2>Salas e atividades</h2>
       </div>
       <div class="image-grid">
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_EP.jpg" alt="Sala de Pedagogia EP" loading="lazy" /><figcaption>Pedagogia EP</figcaption></figure>
-        <div class="image-grid-item" style="background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:var(--muted);border-radius:10px;">Pedagogia SAE</div>
-        <div class="image-grid-item" style="background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:var(--muted);border-radius:10px;">Pedagogia AEE</div>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_artes.jpg" alt="Sala de Arteterapia" loading="lazy" /><figcaption>Arteterapia</figcaption></figure>
-        <div class="image-grid-item" style="background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:var(--muted);border-radius:10px;text-align:center;padding:12px;">Psicologia &amp;<br>Assistência Social</div>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_terapia_ocupacional.jpeg" alt="Sala de Terapia Ocupacional" loading="lazy" /><figcaption>Terapia ocup.</figcaption></figure>
-        <div class="image-grid-item" style="background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:var(--muted);border-radius:10px;">Educação Física</div>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_fonoaudiologia.jpeg" alt="Sala de Fonoaudiologia" loading="lazy" /><figcaption>Fonoaudiologia</figcaption></figure>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_fisioterapia.jpeg" alt="Sala de Fisioterapia" loading="lazy" /><figcaption>Fisioterapia</figcaption></figure>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_informatica.jpeg" alt="Sala de Informática" loading="lazy" /><figcaption>Informática</figcaption></figure>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_multisensorial.jpeg" alt="Sala Snoezelen" loading="lazy" /><figcaption>Snoezelen</figcaption></figure>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/sala_musica.jpeg" alt="Sala de Música" loading="lazy" /><figcaption>Música</figcaption></figure>
-        <div class="image-grid-item" style="background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:var(--muted);border-radius:10px;">Psicopedagogia</div>
-        <div class="image-grid-item" style="background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;color:var(--muted);border-radius:10px;">AVD's</div>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/EP.jpg" alt="Sala de Pedagogia EP" loading="lazy" /><figcaption>Pedagogia EP</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/pedagogia_SAE.jpeg" alt="Sala de Pedagogia SAE" loading="lazy" /><figcaption>Pedagogia SAE</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/pedagogia_AEE.jpeg" alt="Sala de Pedagogia AEE" loading="lazy" /><figcaption>Pedagogia AEE</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/artes.jpg" alt="Sala de Arteterapia" loading="lazy" /><figcaption>Arteterapia</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/pscicologia.jpeg" alt="Sala de Psicologia" loading="lazy" /><figcaption>Psicologia</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/terapia_ocupacional.jpeg" alt="Sala de Terapia Ocupacional" loading="lazy" /><figcaption>Terapia Ocupacional</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/edu_fisica.jpeg" alt="Sala de Educação Física" loading="lazy" /><figcaption>Educação Física</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/fonoaudiologia.jpeg" alt="Sala de Fonoaudiologia" loading="lazy" /><figcaption>Fonoaudiologia</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/fisioterapia.jpeg" alt="Sala de Fisioterapia" loading="lazy" /><figcaption>Fisioterapia</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/informatica.jpeg" alt="Sala de Informática" loading="lazy" /><figcaption>Informática</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/multisensorial.jpeg" alt="Sala Snoezelen" loading="lazy" /><figcaption>Snoezelen</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/musica.jpeg" alt="Sala de Música" loading="lazy" /><figcaption>Música</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/psicopedagogia.jpeg" alt="Sala de Psicopedagogia" loading="lazy" /><figcaption>Psicopedagogia</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/playground.jpeg" alt="Playground" loading="lazy" /><figcaption>Playground</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/mini_cidade.jpeg" alt="Mini Cidade" loading="lazy" /><figcaption>Mini Cidade</figcaption></figure>
       </div>
     </div>
   </section>
