@@ -197,15 +197,33 @@ include 'includes/header.php';
   <section class="band band--tight partners">
     <div class="container">
       <p class="partners-label">Empresas que apoiam a Universo Down</p>
-      <div class="partners-row">
+      <div class="partners-carousel">
+      <div class="partners-track">
         <img src="assets/img/empresas_parceiras/bosch.png" alt="Bosch" loading="lazy" />
         <img src="assets/img/empresas_parceiras/ciser.png" alt="Ciser" loading="lazy" />
         <img src="assets/img/empresas_parceiras/docol.png" alt="Docol" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/fibrasca.png" alt="Fibrasca" loading="lazy" />
         <img src="assets/img/empresas_parceiras/krona.png" alt="Krona" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/lasa.png" alt="Lasa Outdoor" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/magica.png" alt="Mágica Comunicação" loading="lazy" />
+        <img src="assets/img/empresas_parceiras/doterra.png" alt="doTERRA" loading="lazy" />
         <img src="assets/img/empresas_parceiras/tigre.png" alt="Tigre" loading="lazy" />
         <img src="assets/img/empresas_parceiras/tupy.png" alt="Tupy" loading="lazy" />
+        <!-- duplicado para loop infinito -->
+        <img src="assets/img/empresas_parceiras/bosch.png" alt="Bosch" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/ciser.png" alt="Ciser" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/docol.png" alt="Docol" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/fibrasca.png" alt="Fibrasca" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/krona.png" alt="Krona" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/lasa.png" alt="Lasa Outdoor" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/magica.png" alt="Mágica Comunicação" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/doterra.png" alt="doTERRA" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/tigre.png" alt="Tigre" loading="lazy" aria-hidden="true" />
+        <img src="assets/img/empresas_parceiras/tupy.png" alt="Tupy" loading="lazy" aria-hidden="true" />
+      </div>
       </div>
     </div>
   </section>
 
 <?php include 'includes/footer.php'; ?>
+
