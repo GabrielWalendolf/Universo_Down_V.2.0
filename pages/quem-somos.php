@@ -59,17 +59,17 @@ include '../includes/header.php';
         <div class="card card--navy card--pad-lg card-hover">
           <div class="badge badge--ghost"><span class="material-symbols-outlined">star</span></div>
           <h3 style="margin-bottom:10px;">Missão</h3>
-          <p>Promover o desenvolvimento integral de pessoas com Síndrome de Down, fortalecendo sua autonomia e inclusão social.</p>
+          <p>Promover e articular ações de defesa de direitos e prevenção, orientações, prestação de serviços, apoio à família, direcionadas à melhoria da qualidade de vida da pessoa com deficiência e à construção de uma sociedade justa e solidária.</p>
         </div>
         <div class="card card--teal card--pad-lg card-hover">
           <div class="badge badge--ghost"><span class="material-symbols-outlined">visibility</span></div>
           <h3 style="margin-bottom:10px;">Visão</h3>
-          <p>Ser referência em ações inclusivas, contribuindo para uma sociedade mais justa, diversa e acessível.</p>
+          <p>Tornar-se referência em tratamento a pessoas com Trissomia 21, no Brasil.</p>
         </div>
         <div class="card card--pad-lg card-hover">
           <div class="badge badge--soft-orange"><span class="material-symbols-outlined">favorite</span></div>
           <h3 style="margin-bottom:10px;">Valores</h3>
-          <p style="color:var(--muted);">Respeito à diversidade, inclusão, ética, transparência, compromisso social e trabalho colaborativo.</p>
+          <p style="color:var(--muted);">Oferecer estrutura e profissionais capacitados para realizar com excelência os tratamentos oferecidos, promovendo o desenvolvimento pessoal, a inclusão e autonomia.</p>
         </div>
       </div>
     </div>
