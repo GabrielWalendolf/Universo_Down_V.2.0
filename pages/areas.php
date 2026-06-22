@@ -22,7 +22,6 @@ include '../includes/header.php';
   <section class="band band--tight">
     <div class="container area-detail" id="ep">
       <aside class="area-aside">
-        <div class="badge badge--navy">EP</div>
         <h2>Pedagogia EP</h2>
         <p class="age">Dos 3 meses até 6 anos</p>
         <figure class="photo" style="height:340px;margin-top:20px;">
@@ -49,7 +48,6 @@ include '../includes/header.php';
   <section class="band band--tight" style="padding-top:0;">
     <div class="container area-detail" id="aee">
       <aside class="area-aside">
-        <div class="badge badge--teal" style="font-size:15px;">AEE</div>
         <h2>Pedagogia AEE</h2>
         <p class="age">A partir dos 6 anos</p>
         <div class="photo" style="height:200px;margin-top:20px;display:flex;align-items:center;justify-content:center;background:var(--tint);">
@@ -68,7 +66,6 @@ include '../includes/header.php';
   <section class="band band--tight" style="padding-top:0;">
     <div class="container area-detail" id="sae">
       <aside class="area-aside">
-        <div class="badge badge--orange" style="font-size:15px;">SAE</div>
         <h2>Pedagogia SAE</h2>
         <p class="age">A partir dos 18 anos</p>
         <figure class="photo" style="height:340px;margin-top:20px;">
