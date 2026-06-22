@@ -137,23 +137,37 @@ include 'includes/header.php';
     </div>
   </section>
 
-  <!-- Espaços -->
+  <!-- Parceiros -->
   <section class="band band--tint">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow eyebrow--onwhite">Onde acontece</span>
-        <h2>Espaços feitos para acolher</h2>
+        <h2>Nossas atividades são viabilizadas pelo apoio e pelos recursos recebidos das seguintes instituições e órgãos parceiros.</h2>
       </div>
-      <div class="grid grid-3">
-        <figure class="photo" style="height:240px;"><img src="assets/img/espacos/sala_musica.jpeg" alt="Sala de música" loading="lazy" /><figcaption class="tag">Sala de música</figcaption></figure>
-        <figure class="photo" style="height:240px;"><img src="assets/img/espacos/sala_multisensorial.jpeg" alt="Sala multissensorial" loading="lazy" /><figcaption class="tag">Multissensorial</figcaption></figure>
-        <figure class="photo" style="height:240px;"><img src="assets/img/espacos/playground.jpeg" alt="Playground" loading="lazy" /><figcaption class="tag">Playground</figcaption></figure>
-      </div>
-      <p style="text-align:center;margin-top:28px;font-size:15px;color:var(--muted);">Mantida com recursos do FMAS, FIA e FCEE.</p>
-      <div style="display:flex;justify-content:center;gap:24px;margin-top:20px;flex-wrap:wrap;">
-        <div style="width:120px;height:60px;background:var(--tint);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--muted);">FMAS</div>
-        <div style="width:120px;height:60px;background:var(--tint);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--muted);">FIA</div>
-        <div style="width:120px;height:60px;background:var(--tint);border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--muted);">FCEE</div>
+      <div class="grid grid-4">
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/fcee.png" alt="FCEE – Fundação Catarinense de Educação Especial" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/govsc.png" alt="Governo do Estado de Santa Catarina" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/prefeitura.png" alt="Prefeitura de Joinville" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/fmas.png" alt="FMAS – Fundo Municipal de Assistência Social" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/fia.png" alt="FIA – Fundo da Infância e Adolescência" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/cmdca.png" alt="CMDCA – Conselho Municipal dos Direitos da Criança e do Adolescente" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/comde.png" alt="COMDE – Conselho Municipal dos Direitos das Pessoas com Deficiência" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
+        <figure class="photo partner-logo-card" style="height:160px;display:flex;align-items:center;justify-content:center;background:var(--surface);border:1px solid var(--border);padding:16px;">
+          <img src="assets/img/empresas_parceiras/cmas.png" alt="CMAS – Conselho Municipal de Assistência Social" loading="lazy" style="width:75%;max-height:110px;object-fit:contain;" />
+        </figure>
       </div>
     </div>
   </section>

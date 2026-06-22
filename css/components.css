@@ -156,7 +156,7 @@
 .partners { text-align: center; }
 .partners-label { font-weight: 800; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-2); margin-bottom: 30px; }
 .partners-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 48px; }
-.partners-row img { height: 36px; width: auto; opacity: .55; filter: grayscale(1); transition: opacity .2s, filter .2s; }
+.partners-row img { height: 56px; width: auto; opacity: .55; filter: grayscale(1); transition: opacity .2s, filter .2s; }
 .partners-row img:hover { opacity: 1; filter: grayscale(0); }
 
 /* ---------- CTA band ---------- */
