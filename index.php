@@ -63,15 +63,15 @@ include 'includes/header.php';
           <h3>Pedagogia EP</h3>
           <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Acompanhamento pedagógico especializado dos 3 meses até os 6 anos, fase decisiva para o desenvolvimento.</p>
         </a>
-        <a class="card card-hover" href="pages/areas.php#sae" style="text-decoration:none;">
-          <div class="badge badge--orange">SAE</div>
-          <h3>Pedagogia SAE</h3>
-          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Serviço de atendimento especializado para adultos a partir dos 18 anos, focado em autonomia e inclusão.</p>
-        </a>
         <a class="card card-hover" href="pages/areas.php#aee" style="text-decoration:none;">
           <div class="badge badge--teal">AEE</div>
           <h3>Pedagogia AEE</h3>
           <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Apoio pedagógico especializado que complementa a vida escolar de cada criança e adolescente.</p>
+        </a>
+        <a class="card card-hover" href="pages/areas.php#sae" style="text-decoration:none;">
+          <div class="badge badge--orange">SAE</div>
+          <h3>Pedagogia SAE</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Serviço de atendimento especializado para adultos a partir dos 18 anos, focado em autonomia e inclusão.</p>
         </a>
         <a class="card card-hover" href="pages/areas.php#arteterapia" style="text-decoration:none;">
           <div class="badge badge--blue"><span class="material-symbols-outlined">palette</span></div>
