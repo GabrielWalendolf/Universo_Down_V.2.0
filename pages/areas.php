@@ -123,7 +123,7 @@ include '../includes/header.php';
         </div>
         <div class="card" id="informatica">
           <div class="photo" style="height:180px;margin:-32px -32px 20px;border-radius:var(--radius-card) var(--radius-card) 0 0;display:flex;align-items:center;justify-content:center;background:var(--tint);"><span class="material-symbols-outlined" style="font-size:52px;color:var(--muted);">image</span></div>
-          <div class="head"><div class="badge badge--blue"><span class="material-symbols-outlined">computer</span></div><h3>Informática</h3></div>
+          <div class="head"><div class="badge badge--blue"><span class="material-symbols-outlined">computer</span></div><h3>Imersão Digital</h3></div>
           <p style="color:var(--muted);">Inclusão digital com aulas práticas que desenvolvem habilidades tecnológicas, autonomia e preparo para o mundo contemporâneo. Os associados aprendem a usar computadores e ferramentas digitais de forma funcional e significativa para o dia a dia.</p>
         </div>
         <div class="card" id="snoezelen">
@@ -145,8 +145,8 @@ include '../includes/header.php';
         </div>
         <div class="card" id="avds">
           <div class="photo" style="height:180px;margin:-32px -32px 20px;border-radius:var(--radius-card) var(--radius-card) 0 0;display:flex;align-items:center;justify-content:center;background:var(--tint);"><span class="material-symbols-outlined" style="font-size:52px;color:var(--muted);">image</span></div>
-          <div class="head"><div class="badge badge--navy"><span class="material-symbols-outlined">home</span></div><h3>AVD's</h3></div>
-          <p style="color:var(--muted);">Atividades de Vida Diária com foco em habilidades práticas — higiene, alimentação, organização e mobilidade — para maior independência no cotidiano. Cada conquista nessa área representa um passo concreto em direção à autonomia e à participação ativa na vida social.</p>
+          <div class="head"><div class="badge badge--navy"><span class="material-symbols-outlined">home</span></div><h3>Laboratórios Funcionais</h3></div>
+          <p style="color:var(--muted);">Com apoio Pedagógico e T.O — atividades de Vida Diária com foco em habilidades práticas: higiene, alimentação, organização e mobilidade, para maior independência no cotidiano. Cada conquista nessa área representa um passo concreto em direção à autonomia e à participação ativa na vida social.</p>
         </div>
       </div>
     </div>

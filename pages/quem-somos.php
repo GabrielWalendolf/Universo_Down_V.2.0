@@ -92,7 +92,7 @@ include '../includes/header.php';
         <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/edu_fisica.jpeg" alt="Sala de Educação Física" loading="lazy" /><figcaption>Educação Física</figcaption></figure>
         <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/fonoaudiologia.jpeg" alt="Sala de Fonoaudiologia" loading="lazy" /><figcaption>Fonoaudiologia</figcaption></figure>
         <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/fisioterapia.jpeg" alt="Sala de Fisioterapia" loading="lazy" /><figcaption>Fisioterapia</figcaption></figure>
-        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/informatica.jpeg" alt="Sala de Informática" loading="lazy" /><figcaption>Informática</figcaption></figure>
+        <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/informatica.jpeg" alt="Sala de Imersão Digital" loading="lazy" /><figcaption>Imersão Digital</figcaption></figure>
         <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/multisensorial.jpeg" alt="Sala Multissensorial" loading="lazy" /><figcaption>Multissensorial</figcaption></figure>
         <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/musica.jpeg" alt="Sala de Música" loading="lazy" /><figcaption>Música</figcaption></figure>
         <figure class="image-grid-item"><img src="<?php echo $base_path; ?>assets/img/espacos/psicopedagogia.jpeg" alt="Sala de Psicopedagogia" loading="lazy" /><figcaption>Psicopedagogia</figcaption></figure>

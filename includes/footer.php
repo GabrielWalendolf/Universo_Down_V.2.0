@@ -11,7 +11,7 @@ $base_path = isset($base_path) ? $base_path : '';
         <div class="footer-cols">
           <div>
             <img class="footer-logo" src="<?php echo $base_path; ?>assets/img/Logo-UniversoDown-lado.png" alt="Universo Down" />
-            <p class="desc">Associação de Joinville/SC dedicada à inclusão, autonomia e desenvolvimento de pessoas com Síndrome de Down.</p>
+            <p class="desc">Associação de Joinville/SC dedicada à inclusão, autonomia e desenvolvimento funcional de pessoas com Síndrome de Down.</p>
           </div>
           <div>
             <h4>Institucional</h4>

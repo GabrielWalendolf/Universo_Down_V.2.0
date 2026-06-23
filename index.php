@@ -72,7 +72,7 @@ include 'includes/header.php';
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">O que fazemos</span>
-        <h2>Nossas áreas de atuação</h2>
+        <h2>Nossas modalidades terapêuticas</h2>
       </div>
       <div class="grid grid-3">
         <a class="card card-hover" href="pages/areas.php#ep" style="text-decoration:none;">
@@ -127,7 +127,7 @@ include 'includes/header.php';
         </a>
         <a class="card card-hover" href="pages/areas.php#informatica" style="text-decoration:none;">
           <div class="badge badge--blue"><span class="material-symbols-outlined">computer</span></div>
-          <h3>Informática</h3>
+          <h3>Imersão Digital</h3>
           <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Inclusão digital e desenvolvimento de habilidades tecnológicas para o mundo contemporâneo.</p>
         </a>
         <a class="card card-hover" href="pages/areas.php#snoezelen" style="text-decoration:none;">
@@ -147,8 +147,8 @@ include 'includes/header.php';
         </a>
         <a class="card card-hover" href="pages/areas.php#avds" style="text-decoration:none;">
           <div class="badge badge--navy"><span class="material-symbols-outlined">home</span></div>
-          <h3>AVD's</h3>
-          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Atividades de Vida Diária — habilidades práticas para maior autonomia e independência.</p>
+          <h3>Laboratórios Funcionais</h3>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Com apoio Pedagógico e T.O — habilidades práticas para maior autonomia e independência.</p>
         </a>
       </div>
     </div>
