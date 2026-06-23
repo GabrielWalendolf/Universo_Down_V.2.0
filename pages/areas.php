@@ -37,7 +37,7 @@ include '../includes/header.php';
           <div class="item"><b>Terapia Ocupacional</b><span> — coordenação motora fina, integração sensorial e independência no dia a dia.</span></div>
           <div class="item"><b>Pedagogia / Estimulação Cognitiva</b><span> — atenção, memória, raciocínio e habilidades pré-acadêmicas de forma lúdica.</span></div>
           <div class="item"><b>Musicalização</b><span> — linguagem, ritmo, coordenação, interação social e expressão emocional.</span></div>
-          <div class="item"><b>Sala Multissensorial</b><span> — ambiente Snoezelen com luz, som, texturas e aromas para organização sensorial e vínculo.</span></div>
+          <div class="item"><b>Sala Multissensorial</b><span> — ambiente multissensorial com luz, som, texturas e aromas para organização sensorial e vínculo.</span></div>
         </div>
         <p style="margin-top:18px;">A participação da família é essencial: orientamos e envolvemos os responsáveis para dar continuidade aos estímulos em casa. Cada conquista é valorizada, porque todo avanço importa.</p>
       </div>
@@ -128,8 +128,8 @@ include '../includes/header.php';
         </div>
         <div class="card" id="snoezelen">
           <div class="photo" style="height:180px;margin:-32px -32px 20px;border-radius:var(--radius-card) var(--radius-card) 0 0;display:flex;align-items:center;justify-content:center;background:var(--tint);"><span class="material-symbols-outlined" style="font-size:52px;color:var(--muted);">image</span></div>
-          <div class="head"><div class="badge badge--tealdeep"><span class="material-symbols-outlined">lightbulb</span></div><h3>Snoezelen</h3></div>
-          <p style="color:var(--muted);">Ambiente multissensorial com estímulos controlados de luz, som, tato e aroma para organização sensorial, relaxamento e fortalecimento de vínculos. A sala Snoezelen é um espaço de calma e exploração, especialmente indicado para momentos de regulação emocional e estímulo sensorial.</p>
+          <div class="head"><div class="badge badge--tealdeep"><span class="material-symbols-outlined">lightbulb</span></div><h3>Multissensorial</h3></div>
+          <p style="color:var(--muted);">Ambiente multissensorial com estímulos controlados de luz, som, tato e aroma para organização sensorial, relaxamento e fortalecimento de vínculos. A sala multissensorial é um espaço de calma e exploração, especialmente indicado para momentos de regulação emocional e estímulo sensorial.</p>
         </div>
         <div class="card" id="musica">
           <figure class="photo" style="height:180px;margin:-32px -32px 20px;border-radius:var(--radius-card) var(--radius-card) 0 0;">

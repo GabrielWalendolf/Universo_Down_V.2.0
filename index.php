@@ -132,7 +132,7 @@ include 'includes/header.php';
         </a>
         <a class="card card-hover" href="pages/areas.php#snoezelen" style="text-decoration:none;">
           <div class="badge badge--tealdeep"><span class="material-symbols-outlined">lightbulb</span></div>
-          <h3>Snoezelen</h3>
+          <h3>Multissensorial</h3>
           <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Sala multissensorial com estímulos de luz, som e tato para organização sensorial e bem-estar.</p>
         </a>
         <a class="card card-hover" href="pages/areas.php#musica" style="text-decoration:none;">
