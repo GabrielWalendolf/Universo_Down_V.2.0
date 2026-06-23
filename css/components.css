@@ -176,7 +176,9 @@
 .footer ul { list-style: none; display: flex; flex-direction: column; gap: 11px; }
 .footer a { color: rgba(255, 255, 255, .72); text-decoration: none; font-size: 14px; }
 .footer a:hover { color: var(--teal-soft); }
-.footer .footer-meta { padding-top: 22px; font-size: 13px; color: rgba(255, 255, 255, .5); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.footer .footer-meta { padding-top: 22px; font-size: 13px; color: rgba(255, 255, 255, .5); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; align-items: center; }
+.footer .footer-meta-center { text-align: center; }
+.footer .footer-meta-right { text-align: right; }
 
 /* ============================================================
    RESPONSIVO

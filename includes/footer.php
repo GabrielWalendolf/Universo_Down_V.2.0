@@ -44,7 +44,8 @@ $base_path = isset($base_path) ? $base_path : '';
         </div>
         <div class="footer-meta">
           <span>© <?php echo date('Y'); ?> Associação Universo Down</span>
-          <span>CNPJ 81.144.099/0001-05</span>
+          <span class="footer-meta-center">Feito por <a href="https://walendolf.dev" target="_blank" rel="noopener">walendolf.dev</a></span>
+          <span class="footer-meta-right">CNPJ 81.144.099/0001-05</span>
         </div>
       </div>
     </footer>
