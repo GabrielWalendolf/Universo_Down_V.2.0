@@ -15,7 +15,7 @@ include 'includes/header.php';
       <div>
         <span class="eyebrow">Associação de síndrome de Down de Joinville</span>
         <h1>Aqui somos todos estrelas</h1>
-        <p class="hero-lead">Oferecemos atendimento especializado a pessoas com a síndrome, promovendo a inclusão e contribuindo para um mundo mais igualitário.</p>
+        <p class="hero-lead">Oferecemos atendimento especializado a pessoas com síndrome de Down, promovendo a inclusão e contribuindo para um mundo mais igualitário.</p>
         <div class="hero-actions">
           <a class="btn btn--orange btn--lg" href="pages/contato.php#doar">Quero ajudar</a>
           <a class="btn btn--navy btn--lg" href="pages/areas.php">Conheça as áreas</a>
@@ -50,6 +50,23 @@ include 'includes/header.php';
     </div>
   </section>
 
+  <!-- ODS -->
+  <section class="band band--tight band--tint">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Compromisso global</span>
+        <h2>Alinhados aos ODS da ONU</h2>
+        <p>Atuamos em sintonia com os Objetivos de Desenvolvimento Sustentável.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_3.png" alt="ODS 3" loading="lazy" /><div><b>ODS 3</b><span>Saúde e Bem-Estar</span></div></div>
+        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_4.jpg" alt="ODS 4" loading="lazy" /><div><b>ODS 4</b><span>Educação de Qualidade</span></div></div>
+        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_8.png" alt="ODS 8" loading="lazy" /><div><b>ODS 8</b><span>Trabalho Decente</span></div></div>
+        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_11.png" alt="ODS 11" loading="lazy" /><div><b>ODS 11</b><span>Cidades Sustentáveis</span></div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Áreas -->
   <section class="band band--tight">
     <div class="container">
@@ -61,7 +78,7 @@ include 'includes/header.php';
         <a class="card card-hover" href="pages/areas.php#ep" style="text-decoration:none;">
           <div class="badge badge--navy">EP</div>
           <h3>Pedagogia EP</h3>
-          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Acompanhamento pedagógico especializado dos 3 meses até os 6 anos, fase decisiva para o desenvolvimento.</p>
+          <p style="color:var(--muted);font-size:14.5px;margin-top:8px;">Acompanhamento pedagógico especializado dos 6 meses até os 6 anos, fase decisiva para o desenvolvimento.</p>
         </a>
         <a class="card card-hover" href="pages/areas.php#aee" style="text-decoration:none;">
           <div class="badge badge--teal">AEE</div>

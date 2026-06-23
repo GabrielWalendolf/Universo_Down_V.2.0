@@ -23,14 +23,14 @@ include '../includes/header.php';
     <div class="container area-detail" id="ep">
       <aside class="area-aside">
         <h2>Pedagogia EP</h2>
-        <p class="age">Dos 3 meses até 6 anos</p>
+        <p class="age">Dos 6 meses até 6 anos</p>
         <figure class="photo" style="height:340px;margin-top:20px;">
           <img src="<?php echo $base_path; ?>assets/img/areas/ep.jpeg" alt="Pedagogia EP" loading="lazy" />
         </figure>
       </aside>
       <div class="area-body">
         <p>A estimulação precoce acontece do nascimento até, aproximadamente, os 6 anos — fase em que o cérebro apresenta maior capacidade de aprendizagem. Para crianças com Síndrome de Down, esse acompanhamento favorece o desenvolvimento motor, cognitivo, da comunicação e das habilidades sociais, sempre respeitando o ritmo individual.</p>
-        <p>No Universo Down, o trabalho tem início a partir dos 3 meses de vida, com atendimento interdisciplinar e terapias que se complementam:</p>
+        <p>No Universo Down, o trabalho tem início a partir dos 6 meses de vida, com atendimento interdisciplinar e terapias que se complementam:</p>
         <div class="area-list">
           <div class="item"><b>Fonoaudiologia</b><span> — comunicação, linguagem e musculatura orofacial, além de alimentação e respiração.</span></div>
           <div class="item"><b>Fisioterapia</b><span> — força, equilíbrio e coordenação, auxiliando a sentar, engatinhar e andar.</span></div>

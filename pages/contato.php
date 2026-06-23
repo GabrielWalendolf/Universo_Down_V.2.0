@@ -73,7 +73,7 @@ include '../includes/header.php';
           </div>
           <div>
             <span class="eyebrow eyebrow--onnavy is-yellow">Como doar</span>
-            <h2 style="margin-bottom:14px;">Sua contribuição mantém nossos projetos vivos.</h2>
+            <h2 style="margin-bottom:14px; color:#fff;">Sua contribuição mantém nossos projetos vivos.</h2>
             <p style="font-size:16px;">Use o QR Code ou copie a chave Pix ao lado para realizar sua doação. Qualquer valor ajuda a manter atendimentos 100% gratuitos para dezenas de famílias.</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <?php
-$page_title       = 'A Associação | Universo Down';
+$page_title       = 'Associação | Universo Down';
 $meta_description = 'Conheça a história, a missão e os espaços da Universo Down — associação de Joinville/SC dedicada à inclusão de pessoas com Síndrome de Down.';
 $base_path        = '../';
 $current_page     = 'quem-somos';
@@ -12,7 +12,7 @@ include '../includes/header.php';
     <span class="blob blob--teal" style="width:220px;height:220px;right:-50px;top:-50px;"></span>
     <div class="container">
       <span class="eyebrow eyebrow--onnavy">Quem somos</span>
-      <h1>A Associação</h1>
+      <h1>Associação</h1>
       <p>Uma associação comprometida com inclusão, respeito e autonomia para pessoas com Síndrome de Down.</p>
     </div>
   </section>
@@ -71,23 +71,6 @@ include '../includes/header.php';
           <h3 style="margin-bottom:10px;">Valores</h3>
           <p style="color:var(--muted);">Oferecer estrutura e profissionais capacitados para realizar com excelência os tratamentos oferecidos, promovendo o desenvolvimento pessoal, a inclusão e autonomia.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ODS -->
-  <section class="band band--tight">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Compromisso global</span>
-        <h2>Alinhados aos ODS da ONU</h2>
-        <p>Atuamos em sintonia com os Objetivos de Desenvolvimento Sustentável.</p>
-      </div>
-      <div class="grid grid-4">
-        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_3.png" alt="ODS 3" loading="lazy" /><div><b>ODS 3</b><span>Saúde e Bem-Estar</span></div></div>
-        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_4.jpg" alt="ODS 4" loading="lazy" /><div><b>ODS 4</b><span>Educação de Qualidade</span></div></div>
-        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_8.png" alt="ODS 8" loading="lazy" /><div><b>ODS 8</b><span>Trabalho Decente</span></div></div>
-        <div class="card ods-item card-hover" style="padding:22px;"><img src="<?php echo $base_path; ?>assets/img/ods/ods_11.png" alt="ODS 11" loading="lazy" /><div><b>ODS 11</b><span>Cidades Sustentáveis</span></div></div>
       </div>
     </div>
   </section>

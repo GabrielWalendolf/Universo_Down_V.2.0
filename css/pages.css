@@ -7,7 +7,7 @@
 
 /* ---------- Page hero (páginas internas) ---------- */
 .page-hero { background: var(--navy); color: #fff; position: relative; overflow: hidden; padding-block: clamp(48px, 6vw, 62px); }
-.page-hero h1 { margin-bottom: 14px; }
+.page-hero h1 { margin-bottom: 14px; color: #fff; }
 .page-hero p { font-size: clamp(16px, 2vw, 18px); color: rgba(255, 255, 255, .82); max-width: 560px; }
 
 /* ---------- História (split) ---------- */
