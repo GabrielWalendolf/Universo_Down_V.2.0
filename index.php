@@ -15,7 +15,7 @@ include 'includes/header.php';
       <div>
         <span class="eyebrow">Associação de síndrome de Down de Joinville</span>
         <h1>Aqui somos todos estrelas</h1>
-        <p class="hero-lead">Oferecemos atendimento especializado a pessoas com síndrome de Down, promovendo a inclusão e contribuindo para um mundo mais igualitário.</p>
+        <p class="hero-lead">Oferecemos atendimento especializado a pessoas com Síndrome de Down, promovendo a inclusão e contribuindo para um mundo mais igualitário.</p>
         <div class="hero-actions">
           <a class="btn btn--orange btn--lg" href="pages/contato.php#doar">Quero ajudar</a>
           <a class="btn btn--navy btn--lg" href="pages/areas.php">Conheça as áreas</a>
