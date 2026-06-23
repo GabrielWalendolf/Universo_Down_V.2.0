@@ -45,7 +45,7 @@ include 'includes/header.php';
     <div class="container grid grid-4">
       <div class="stat"><b>+30</b><span>anos de atuação</span></div>
       <div class="stat"><b>+200</b><span>famílias acompanhadas</span></div>
-      <div class="stat"><b>15</b><span>áreas de atendimento</span></div>
+      <div class="stat"><b>15</b><span>modalidades terapêuticas</span></div>
       <div class="stat"><b>100%</b><span>gratuito às famílias</span></div>
     </div>
   </section>

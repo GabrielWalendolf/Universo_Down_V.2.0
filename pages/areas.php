@@ -12,7 +12,7 @@ include '../includes/header.php';
     <span class="blob blob--teal" style="width:220px;height:220px;right:-50px;top:-50px;"></span>
     <div class="container">
       <span class="eyebrow eyebrow--onnavy">O que fazemos</span>
-      <h1>Áreas de atuação</h1>
+      <h1>Modalidades Terapêuticas</h1>
       <p>Quinze frentes de trabalho que acompanham cada pessoa em todas as fases da vida.</p>
     </div>
   </section>
